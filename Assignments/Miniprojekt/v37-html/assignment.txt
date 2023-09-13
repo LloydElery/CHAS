@@ -1,0 +1,20 @@
+Miniprojekt
+
+Today’s Miniprojekt
+
+Hobby Page
+We all have different hobbies. Let’s say you are assigned (or choose yourself) to create a small
+webpage to convince more people to start with your hobby.
+Create a small webpage in HTML where you talk about a hobby (related to sports, music,
+programming, gaming, culture…) you have. Include images and videos and try to make it
+enticing for the reader to start with the hobby.
+
+Try to incorporate several of the elements we’ve discussed (lists, tables, definitions,
+and abbreviations…). You’re also welcome to add HTML elements you find here:
+https://developer.mozilla
+1
+
+1. Create a small webpage 
+2. Select a theme
+3. Add images, videos and make it enticing
+4. incorporate several of the elements covered in todays lecture.
