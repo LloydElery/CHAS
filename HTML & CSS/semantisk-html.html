@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semantisk HTML</title>
+  </head>
+  <body>
+    <!-- Länkar till mail / Telefon-->
+    <section class="About">
+      <h2>En rubrik i storleken h2</h2>
+      <a href="mailto:Dennis.jensen@chasacademy.se?subject=Dear Jesus"
+        >Maila Jesus</a
+      >
+      <a href="tel:+0000000000">Ring Jesus</a>
+
+      <!-- Tabell -->
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Ett</th>
+            <th scope="col">Två</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Formulär som kräver argument från användaren -->
+      <form action="about.html" method="post">
+        <label for="Name">Namn</label>
+        <input type="name" />
+      </form>
+
+      <!-- Inbäddning av Video (EJ KLAR)-->
+      <video width="320" height="240" controls>
+        <source
+          src="https://www.youtube.com/watch?v=ZiP1l7jlIIA"
+          type="video"
+        />
+      </video>
+    </section>
+  </body>
+</html>
