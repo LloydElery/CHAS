@@ -81,17 +81,22 @@
 </ol>
 ```
 
-### 9. Links are also important part of the web desing. You can use them to navigate your
+### 9. Links are also important part of the web desing. You can use them to navigate your own website and also connect your website to other websites. Write a link that opens a new tab and leads into Google.com with the text “Link to Google”. Images and videos
 
-own website and also connect your website to other websites. Write a link that opens a
-new tab and leads into Google.com with the text “Link to Google”.
-Images and videos
+![Alt text](image-1.png)
 
-### 10. Most webpages have images so it’s good to know how to add images in HTML. Write the
+```html
+<a href="google.com">Google</a>
+```
 
-tag that is used to add images. If you want to try this out in a HTML document you can
-use “https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flower_poster_2.jpg/1200pxFlower_poster_2.jpg” (Picture of some flowers) for example, as the image source. You
-can scale the picture with width and height (in pixels).
+### 10. Most webpages have images so it’s good to know how to add images in HTML. Write the tag that is used to add images. If you want to try this out in a HTML document you can use “https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flower_poster_2.jpg/1200pxFlower_poster_2.jpg” (Picture of some flowers) for example, as the image source. You can scale the picture with width and height (in pixels).
+
+```HTml
+<img
+      src="/Images/javascript-illustration.png"
+      alt="An illustration of JavaScript"
+    />
+```
 
 ### 11. Videos have become more prevelent on the web and many websites also have some video
 
