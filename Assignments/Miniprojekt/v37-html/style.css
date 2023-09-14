@@ -17,15 +17,16 @@
 }
 
 .nav-title {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   font-size: 22px;
   color: black;
   padding: 10px;
 }
 
 .nav-links {
-  display: inline;
-  float: right;
+  display: flex;
+  justify-content: center;
   font-size: 17px;
 }
 
@@ -44,9 +45,9 @@
 /* Headline -----------------------------------------*/
 .headline {
   width: 100%;
-  height: 200px;
+  height: 160px;
   min-width: 200px;
-  background-size: cover; /* Cover anpassar din bakgrund efter sin parent. Så att det passa hela elementet */
+  background-size: cover;
   background-image: linear-gradient(
     to bottom,
     rgb(179, 155, 202),
@@ -57,9 +58,9 @@
 .headline > h1,
 .headline > p {
   text-align: center;
-  padding: 20px;
   color: white;
   font-size: xx-large;
+  padding-top: 40px;
 }
 
 .container {

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulär</title>
+  </head>
+  <body>
+    <h1>Ett enkelt formulär</h1>
+
+    <!-- Formulär 1rad -->
+    <form action="" method="post">
+      <input
+        type="text"
+        name="MinText"
+        size="25"
+        maxlength="25"
+        value="Startvarde"
+      />
+      <label for="">Name</label>
+      <br /><br />
+
+      <!-- Formulär rezisable -->
+      <textarea name="MinArea" rows="5" cols="25">
+        Startvarde
+      </textarea>
+      <br /><br />
+
+      <!-- Password -->
+      <input
+        type="password"
+        name="MinText"
+        size="25"
+        maxlength="25"
+        value="Startvarde"
+      />
+      <label>Password</label>
+    </form>
+
+    <!-- Kryssruta -->
+    <input
+      type="checkbox"
+      name="OfylltKryss"
+      id="OfylltKryss"
+      value="Kryssad0"
+    />
+    <label for="OfylltKryss">OfylltKryss</label>
+
+    <input
+      type="checkbox"
+      name="IfylltKryss"
+      id="IfylltKryss"
+      value="Kryssad0"
+      checked
+    />
+    <label for="IfylltKryss">OfylltKryss</label>
+
+    <!-- Radioknapp -->
+    <form action="">
+      <p>Grupp 1</p>
+      <input type="radio" name="grupp1" id="a1" value="1" cacked />
+      <label for="a1">Ett</label>
+      <input type="radio" name="grupp1" id="a2" value="2" cacked />
+      <label for="a1">Två</label>
+      <input type="radio" name="grupp1" id="a3" value="3" cacked />
+      <label for="a1">Tre</label>
+    </form>
+
+    <br />
+    <hr />
+
+    <!-- Listrutor -->
+    <form action="">
+      <p>Listrutor</p>
+      <select name="MinListruta" id="2" size="0">
+        <!-- size="" 0-1 = Dropdown. 2- = Scrollbar -->
+        <option value="">Ett</option>
+        <option value="">Två</option>
+        <option value="">Tre</option>
+        <option value="">Fyra</option>
+      </select>
+      <input type="submit" value="Submit" name="Submit" id="Submit-btn" />
+      <button type="submit" value="Submit">Submit Button</button>
+    </form>
+
+    <br />
+    <hr />
+
+    <!-- Övning -->
+    <h1>ÖVNING</h1>
+
+    <form action="" method="get">
+      <label for=""><h2>Förnamn</h2></label>
+
+      <input
+        type="name"
+        name="FirstName"
+        id="FirstName"
+        size="25"
+        maxlength="25"
+        value="Förnamn"
+      />
+
+      <br /><br />
+
+      <label for=""><h2>Efternamn</h2></label>
+
+      <input
+        type="name"
+        name="LastName"
+        id="LastName"
+        size="25"
+        maxlength="25"
+        value="Efternamn"
+      />
+
+      <br /><br />
+
+      <form action="">
+        <p>Alternativ</p>
+        <input type="radio" name="Alternativ1" id="Alternativ1" value="1" />
+        <label for="Alternativ1">Alternativ 1</label>
+
+        <br />
+
+        <input type="radio" name="Alternativ2" id="Alternativ2" value="2" />
+        <label for="Alternativ2">Alternativ 2</label>
+
+        <br />
+
+        <input type="radio" name="Alternativ3" id="Alternativ3" value="3" />
+        <label for="Alternativ3">Alternativ 3</label>
+
+        <br />
+        <br />
+
+        <button type="submit" id="Submit-btn" name="Submit-btn">Skicka</button>
+      </form>
+
+      <br />
+      <hr />
+
+      <!-- Email -->
+      <form action="mailto:dennis.jensen@chasacademy.se" method="get">
+        <label for=""><h3>Subject</h3></label>
+        <input type="text" name="Subject" id="" />
+        <br />
+        <button type="submit" name="Submit">Submit</button>
+      </form>
+    </form>
+  </body>
+</html>
