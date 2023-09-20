@@ -110,6 +110,21 @@
   background-position: right;
 }
 
+.card-4 {
+  background-image: url(https://cdn.discordapp.com/attachments/1087278956614529044/1151520801128988753/javascript-illustration.png);
+  background-position: right;
+}
+
+.card-5 {
+  background-image: url(https://cdn.discordapp.com/attachments/1087278956614529044/1151520801128988753/javascript-illustration.png);
+  background-position: right;
+}
+
+.card-6 {
+  background-image: url(https://cdn.discordapp.com/attachments/1087278956614529044/1151520801128988753/javascript-illustration.png);
+  background-position: right;
+}
+
 .content {
   margin: 10px;
   text-align: center;
@@ -134,33 +149,4 @@
   background-color: white;
   transition: 0.3s;
   transform: scale(1.01);
-}
-
-/* Table */
-.table {
-  display: flex;
-  justify-content: center;
-}
-
-.table > tbody {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-  padding: 10px;
-}
-
-.table-row {
-  display: flex;
-  justify-content: space-evenly;
-  background-color: black;
-}
-
-td {
-  background-color: rgb(205, 170, 205);
-  width: 60px;
-  padding: 1px;
-  display: flex;
-  justify-content: space-evenly;
-  margin: 1px;
 }
