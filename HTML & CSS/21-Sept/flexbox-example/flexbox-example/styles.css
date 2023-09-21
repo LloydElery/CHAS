@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: fit-content;
+  padding: 1rem;
+  background-image: linear-gradient(90deg, #023047, #ffb703, #fb8500);
+}
+
+/* Ger attribut till alla lådor */
+.box {
+  width: 33.33%;
+  height: 100px;
+  margin: 10px;
+}
+
+.red {
+  background-color: #023047;
+}
+
+.blue {
+  background-color: #ffb703;
+}
+
+.green {
+  background-color: #fb8500;
+}
