@@ -1,0 +1,13 @@
+@import "reset.scss";
+
+$myFont: Helvetica, sans-serif;
+$myColor: Red;
+$myFontSize: 18px;
+$myWidth: 680px;
+
+body {
+  font-family: $myFont;
+  font-size: $myFontSize;
+  background-color: $myColor;
+  width: $myWidth;
+}

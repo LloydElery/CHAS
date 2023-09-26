@@ -1,0 +1,12 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  background-color: Red;
+  width: 680px;
+}/*# sourceMappingURL=style.css.map */
