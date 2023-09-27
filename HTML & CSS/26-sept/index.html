@@ -6,5 +6,81 @@
     <title>26 September</title>
     <link rel="stylesheet" href="style.scss" />
   </head>
-  <body></body>
+  <body>
+    <section>
+      <h1>Högsta Prio</h1>
+      <!-- SEO, Screen-readers, automatiskt värde -->
+      <h2></h2>
+      <h3></h3>
+      <h4></h4>
+      <h5></h5>
+      <h6>Lägsta prio</h6>
+      <p style="font-size: 30px">Rubrik</p>
+      <!-- No bueno! -->
+      <p style="font-size: 17px">Brödtext</p>
+      <!-- No bueno! -->
+    </section>
+
+    <ul>
+      <li>2 Ägg</li>
+      <li>5L Vatten</li>
+      <li>5tsk Majs</li>
+      <li>5dl Mjöl</li>
+    </ul>
+    <ol>
+      <li>Stek majs</li>
+      <li>Blanda torra ingredienser</li>
+      <li>Häll i vatten och blanda hastigt</li>
+    </ol>
+
+    <form>
+      <!-- insert * image alt="Obligatorisk" -->
+      <label for="namn">Namn:</label>
+      <input type="text" id="namn" name="namn" />
+
+      <label for="email">E-post:</label>
+      <input type="email" id="email" name="email" />
+
+      <input type="submit" value="Skicka" />
+    </form>
+
+    <table style="border: 1px solid">
+      <caption>
+        <!-- Används för att ge en titel på en tabell -->
+        Produktlista
+      </caption>
+      <tr>
+        <th scope="col">Produkt</th>
+        <!-- Rad 1 -->
+        <th scope="col">Pris</th>
+        <!-- Rad 2 -->
+        <th scope="col">Tillgänglighet</th>
+        <!-- Rad 3 -->
+      </tr>
+      <tr>
+        <td>Skor</td>
+        <!-- Rad 1 -->
+        <td>500 kr</td>
+        <!-- Rad 2 -->
+        <td>Ja</td>
+        <!-- Rad 3 -->
+      </tr>
+      <tr>
+        <td>T-shirt</td>
+        <!-- Rad 1 -->
+        <td>200 kr</td>
+        <!-- Rad 2 -->
+        <td>Nej</td>
+        <!-- Rad 3 -->
+      </tr>
+      <tr>
+        <td>Hatt</td>
+        <!-- Rad 1 -->
+        <td>100 kr</td>
+        <!-- Rad 2 -->
+        <td>Ja</td>
+        <!-- Rad 3 -->
+      </tr>
+    </table>
+  </body>
 </html>
