@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dennis Jensen Portfolio</title>
+
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Stylesheet för hela sidan -->
+    <link rel="stylesheet" href="reset.css" />
+    <!--Reset stylesheet, nollställer CSS värden som kan ställa till det i styling processen -->
+
+    <!-- FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICON -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER-SECTION -->
+
+    <!-- NAVBAR -->
+    <!-- Title | Navigations länkar / Dropdown -->
+    <nav class="nav">
+      <h1 class="nav-title">Webdesign & functionallity</h1>
+
+      <!-- Dropdown -->
+      <div class="dropdown">
+        <div class="dropdown-btn">
+          <div class="material-symbols-outlined">menu</div>
+        </div>
+        <div class="nav-links">
+          <a href="#html-card">HTML</a>
+          <a href="#css-card">CSS</a>
+          <a href="#javascript-card">JavaScript</a>
+          <a href="#midjourney-card">Midjourney</a>
+          <a href="#table-card">Tabell</a>
+          <a href="#video-card">Video</a>
+        </div>
+      </div>
+    </nav>
+    <!-- HERO SECTION -->
+    <!-- H1 | H2 | Hero Bild | Brödtext | Sociala Medier -->
+    <section id="hero" class="hero">
+      <div class="hero-headline">
+        <h1>Curriculum Vitae</h1>
+        <p>Dennis Jensen</p>
+      </div>
+      <br />
+      <div class="hero-image-container">
+        <div class="hero-image"></div>
+      </div>
+      <br />
+      <div class="hero-content">
+        <h2>Fullstack Webdeveloper</h2>
+        <h4>FROM IDEA TO EXECUTION</h4>
+      </div>
+
+      <!-- SOCIAL MEDIA SECTION IN HEADER -->
+      <div class="sm-icons">
+        <div class="instagram-icon">
+          <a href="https://www.instagram.com/dennisjensen/"
+            ><img src="Images/instagram.svg" alt="Instagram icon with link"
+          /></a>
+        </div>
+        <div class="github-icon">
+          <a href="https://github.com/lloydelery"
+            ><img src="Images/github.svg" alt="GitHub icon with link"
+          /></a>
+        </div>
+        <div class="linkedIn-icon">
+          <a href="https://www.linkedin.com/in/dennis-jensen-stockholm/"
+            ><img src="Images/linkedin.svg" alt="LinkedIn icon with link"
+          /></a>
+        </div>
+        <div class="discord-icon">
+          <a href="https://discord.gg/8SRNuNXTXk"
+            ><img src="Images/discord.svg" alt="Discord icon with link"
+          /></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BODY WRAPPER -->
+    <!-- Wrapper Container | Back/Upp-Knapp | Body Content -->
+    <main class="wrapper">
+      <!-- Wrappes the entire body of the page fo easy ajustment -->
+      <div class="back-btn">
+        <a href="#hero">
+          <div class="material-symbols-outlined">stat_3</div>
+        </a>
+      </div>
+
+      <!-- SECTIONS -->
+
+      <!-- SECTION 1 | HTML CARD -->
+      <!-- Container | Card | Image | Content | Button -->
+      <section class="container">
+        <div id="html-card" class="card">
+          <div class="image card-1"></div>
+          <div class="content">
+            <div><h2>HTML</h2></div>
+            <div><p>Structure your site</p></div>
+            <div class="btn-container">
+              <button class="btn">More info</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2 | CSS CARD -->
+      <!-- Container | Card | Image | Content | Button -->
+      <section class="container">
+        <div id="css-card" class="card">
+          <div class="image card-2"></div>
+          <div class="content">
+            <div><h2>CSS</h2></div>
+            <div><p>Design your site</p></div>
+            <div class="btn-container">
+              <button class="btn">More info</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3 | JAVASCRIPT CARD -->
+      <!-- Container | Card | Image | Content | Button -->
+      <section class="container">
+        <div id="javascript-card" class="card">
+          <div class="image card-3"></div>
+          <div class="content">
+            <div><h2>JavaScript</h2></div>
+            <div><p>Add functionallity</p></div>
+            <div class="btn-container">
+              <button class="btn">More info</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4 | MIDJOURNEY CARD -->
+      <!-- Container | Card | Image | Content | Button -->
+      <section class="container">
+        <div id="midjourney-card" class="card">
+          <div class="image card-4"></div>
+          <div class="content">
+            <div><h2>Midjourney</h2></div>
+            <div><p>Get creative</p></div>
+            <div class="btn-container">
+              <button class="btn">More info</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 5 | TABELL -->
+      <!-- Container | Card | Table -->
+      <section class="container">
+        <div id="table-card" class="card">
+          <table class="table">
+            <caption>
+              Tabell
+            </caption>
+            <tr class="table-row table-row-th">
+              <th scope="col">Rad 1</th>
+              <th scope="col">Rad 2</th>
+              <th scope="col">Rad 3</th>
+            </tr>
+
+            <tr class="table-row table-row-td">
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+
+            <tr class="table-row table-row-td">
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+
+            <tr class="table-row table-row-td">
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <!-- SECTION 6 | VIDEO CARD -->
+      <!-- Container | Card | Video | Content -->
+      <section class="container">
+        <div id="video-card" class="video-card">
+          <div class="card-6">
+            <iframe
+              src="https://www.youtube.com/embed/6Dh-RL__uN4?si=LhgzTOzppycQnzU_"
+            ></iframe>
+          </div>
+          <div class="content">
+            <h2>Video</h2>
+            <p>Press the video to play</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
