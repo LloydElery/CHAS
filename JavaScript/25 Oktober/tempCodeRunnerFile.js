@@ -1,1 +1,1 @@
-console.log(Boolean(length));
+2
