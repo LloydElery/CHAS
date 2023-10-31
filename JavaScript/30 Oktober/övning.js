@@ -8,6 +8,7 @@ arr.forEach((myFunc) => {
 });
 
 console.log('Övning 2');
+
 arr = [1, 14, 53, 2, 76];
 
 arr.forEach((item) => {
@@ -15,3 +16,12 @@ arr.forEach((item) => {
     console.log(item);
   }
 });
+
+console.log('Övning 3');
+
+function myArray() {
+  arr = console.log(arr);
+}
+console.log(myArray());
+
+console.log('Övning 4');
