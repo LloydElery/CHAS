@@ -25,15 +25,24 @@ class Recipe {
     this.ingredients.pop(ingredient);
   }
 }
-const newRecipe = new Recipe('Title', 'Description', 30, ['Ing1', 'Ing2', 'Ing3'], ['Prep1', 'Prep2']);
+const kladdkaka = new Recipe('Kladdkaka', 'Description', 30, ['Ing1', 'Ing2', 'Ing3'], ['Prep1', 'Prep2']);
+const paj = new Recipe('paj', 'Description', 30, ['Ing1', 'Ing2', 'Ing3'], ['Prep1', 'Prep2']);
+const saft = new Recipe('saft', 'Description', 30, ['Ing1', 'Ing2', 'Ing3'], ['Prep1', 'Prep2']);
+const gryta = new Recipe('gryta', 'Description', 30, ['Ing1', 'Ing2', 'Ing3'], ['Prep1', 'Prep2']);
+
 // Add an ingredient
-newRecipe.addIngredient('ko');
+kladdkaka.addIngredient('ko');
 
 // Print Recipe
-newRecipe.printRecipe();
+kladdkaka.printRecipe();
 
 // Remove ingredient
-newRecipe.removeIngredient();
+kladdkaka.removeIngredient();
 
 // Print Recipe
-newRecipe.printRecipe();
+kladdkaka.printRecipe();
+
+Recipe.forEach((Recipe) => {
+  title = this.title;
+  console.log(this.title);
+});
