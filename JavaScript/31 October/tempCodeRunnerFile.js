@@ -16,37 +16,36 @@ const cat = new Animal('Cat');
 console.log(cat.makeSound); */
 
 class Djur {
+  name;
 
-    name;
+  constructor(name) {
+    this.name = name;
+  }
 
-    constructor(name){
-        this.name = name;
-    }
-
-    makeSound() {
-        console.log(`Grrr, jag heter ${this.name}`)
-    }
+  makeSound() {
+    console.log(`Grrr, jag heter ${this.name}`);
+  }
 }
 
 class Dog extends Djur {
+  breed;
 
-    breed;
-
-    constructor(breed){
-        this.breed = breed;
-    }
-
+  constructor(name, breed) {
+    super(name);
+    this.breed = breed;
+  }
 }
 
 class Cat extends Djur {
+  breed;
 
-    breed;
-
-    constructor(breed){
-        this.breed = breed;
-    }
-
+  constructor(name, breed) {
+    super(name);
+    this.breed = breed;
+  }
 }
 
-const lucky = new Dog('Pitbull');
-const findus = new Cat('Bengal');
+const lucky = new Dog('Lucky', 'Pitbull');
+const findus = new Cat('Findus', 'Bengal');
+const Alfons = new Cat();
+console.log(lucky, findus);
