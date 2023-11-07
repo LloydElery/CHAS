@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+  <body>
+    <h2>My First Page</h2>
+    <p id="demo"></p>
+    <script>
+      document.getElementById('demo').innerHTML = 'Hello World!';
+      const nodeList = document.querySelectorAll('p');
+      for (let i = 0; i < nodeList.length; i++) {
+        nodeList[i].innerHTML = 'Hej, jag är en p tag!';
+      }
+    </script>
+  </body>
+</html>
