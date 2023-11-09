@@ -1,9 +1,10 @@
-// 1. Skapa en funktion som fetchar från API
-// - async/await
-// - try
+// StarWars API Fetch
 
-// 2. Hämtar character från API
-// 3. Vi vill loopa igenom och hämta och visa alla characters
+// När en 'button' på sidan trycks på, ska följande ske.
+
+// 1. 'name' ska dyka upp i 'card' 'head' som en 'h3'-rubrik
+// 2. 'information' som 'name' ska dyka upp nedanför 'head' i 'card' som ett 'p'-element
+// 3. 'button' ska visas intryckt under tiden dess värde visas i card.
 
 let buttonClicked = false;
 
