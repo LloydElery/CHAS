@@ -1,0 +1,42 @@
+// Stylesheets
+@use "design";
+@use "header";
+@use "footer";
+@use "frontPage";
+@use "pricelist/priceList";
+@use "membership-page/membership";
+@use "smullbox/smullbox";
+@use "./contact/contact";
+@use "News-Page/news";
+// Design
+$colorBrown: #763a03;
+$colorLB: #c9f0ff;
+$colorDB: #4d7ea8;
+$colorSand: #ccad8f;
+$colorBlack: #0000;
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: tahoma, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  min-width: 100%;
+  min-height: 1000px;
+  margin-top: 100px;
+  background-color: #ccad8f;
+}
+
+/* try this in your wrapper (main) for footer, so it is stuck to the bottom
+.wrapper {
+      flex: 1 0 auto;
+}
+*/

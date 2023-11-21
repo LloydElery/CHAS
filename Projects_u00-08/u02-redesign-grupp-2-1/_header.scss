@@ -1,0 +1,698 @@
+// DESIGN
+$colorBrown: #763a03;
+$colorLB: #c9f0ff;
+$colorDB: #4d7ea8;
+$colorSand: #ccad8f;
+$colorBlack: #000000;
+$colorWhite: whitesmoke;
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: tahoma, sans-serif;
+  h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: $colorBrown;
+  }
+  h2 {
+    color: $colorDB;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 15px;
+    color: $colorBlack;
+  }
+  p {
+    font-size: 10px;
+    color: $colorBlack;
+  }
+}
+
+/* HEADER SECTION */
+.header-container {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--lightBrownBaseColor, #ccad8f);
+
+  /* Header | Container */
+  .header-section {
+    background-image: linear-gradient(
+      hsla(29, 95%, 24%, 0.2),
+      hsla(30, 37%, 68%, 0.2)
+    );
+    max-width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+
+    @media screen and (min-width: 970px) {
+      // Adds a margin to the header to diasplay the nav-buttons
+      margin-bottom: 10px;
+    }
+
+    &:nth-child(3) {
+      justify-self: center;
+    }
+
+    /* Header-Login | Container */
+    .login {
+      position: absolute;
+      top: 50%;
+      left: 8vw;
+      transform: translate(-50%, -50%);
+
+      /* Header-Login | BTN */
+      .login-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        outline: inherit;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+
+        .login-btn-icon-2 {
+          display: none; // Döljer 'X' knappen när menyn är stängd
+        }
+
+        &:hover {
+          .login-btn-icon-1 {
+            display: none; // Döljer 'Meny' knappen när menyn är öppen
+          }
+
+          .login-btn-icon-2 {
+            display: inline-block;
+          }
+        }
+      }
+    }
+
+    /* Search Button */
+    .search {
+      @extend .login;
+      left: 18vw;
+
+      .search-btn {
+        @extend .login-btn;
+        img {
+          transition: transform 0.3s ease; // Speed of the transform
+
+          &:hover,
+          :focus {
+            transform: rotate(90deg);
+          }
+        }
+        &:focus {
+          transform: translateX(-2vw);
+
+          @media screen and (max-width: 970px) {
+            transform: translateX(0vw);
+          }
+        }
+      }
+    }
+
+    .search {
+      @extend .login;
+      left: 18vw;
+      display: inline-block;
+
+      .search-label {
+        cursor: pointer;
+      }
+
+      .search-btn {
+        cursor: pointer;
+        @extend .login-btn;
+        img {
+          transition: transform 0.3s ease; // Speed of the transform
+
+          &:hover {
+            transform: rotate(90deg);
+          }
+        }
+      }
+
+      .search-input {
+        display: none;
+        position: absolute;
+        background: none;
+        border: none;
+        width: 10vw;
+        color: #000;
+        letter-spacing: 1.95px;
+        border-bottom: 1px solid #000;
+        top: 5px;
+
+        @media screen and (max-width: 800px) {
+          top: 30px;
+          left: -12vw;
+          width: 20vw;
+        }
+      }
+
+      .search-btn:focus + .search-input,
+      .search-input:focus {
+        display: block;
+      }
+
+      @media screen and (max-width: 970px) {
+        .search-btn:hover + .search-input,
+        .search-input:focus {
+          display: block;
+        }
+      }
+    }
+
+    /* Resto Logo */
+    .resto {
+      width: 203px;
+      height: 59px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      @media screen and (min-width: 970px) {
+        top: 40%;
+      }
+
+      .resto-logo-1 {
+        display: flex;
+
+        @media screen and (min-width: 970px) {
+          display: none;
+        }
+      }
+
+      .resto-logo-2 {
+        display: none;
+
+        @media screen and (min-width: 970px) {
+          display: flex;
+        }
+      }
+      img {
+        width: inherit;
+        height: inherit;
+      }
+
+      // Makes the logo image larger on a bigger screen
+      @media screen and (min-width: 970px) {
+        width: fit-content;
+        height: auto;
+      }
+    }
+
+    /* DROPDOWN */
+    /* Dropdown | Container */
+    .dropdown {
+      /* Toggle Button | Drop-down button */
+      .toggle-btn {
+        position: relative;
+        right: -39vw;
+        img {
+          transition: transform 0.3s ease; // Speed of the transform
+
+          &:hover {
+            transform: rotate(180deg); // Rotates the 'X' icon 180'
+          }
+        }
+        .toggle-btn-icon {
+          position: relative;
+          background: none;
+          border: none;
+          cursor: pointer;
+          outline: inherit;
+          width: 100%;
+          height: 100%;
+          padding: 0;
+
+          .menu-btn-icon-2 {
+            display: none; // Döljer 'X' knappen när menyn är stängd
+          }
+
+          &:hover {
+            .menu-btn-icon-1 {
+              display: none; // Döljer 'Meny' knappen när menyn är öppen
+            }
+
+            .menu-btn-icon-2 {
+              display: inline-block;
+            }
+          }
+        }
+
+        // Removes the menu button on larger screens.
+        @media screen and (min-width: 970px) {
+          visibility: hidden;
+        }
+      }
+
+      /* Dropdown-Content | Container */
+      .dropdown-content {
+        width: 100%;
+        height: 100vh;
+        top: 100px;
+        left: 0;
+        position: absolute;
+        display: none; // Hides the dropdown menu
+        flex-direction: column;
+        align-items: center;
+        background-color: $colorSand;
+
+        // Adds dropdown menu to larger screen
+        @media screen and (min-width: 970px) {
+          display: flex;
+          align-items: flex-end;
+          background-color: unset;
+          width: 100%;
+          height: auto;
+          top: 0px;
+        }
+      }
+
+      /* Dropdown-Login | Container */
+      .dropdown-content-login {
+        width: 280px;
+        height: 43px;
+        flex-shrink: 0;
+        overflow: hidden;
+
+        // Removes the login form in dropdown on larger screens.
+        @media screen and (min-width: 970px) {
+          display: none;
+        }
+      }
+      .dd-form {
+        display: flex;
+        height: 45px;
+        font-size: 15px;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        justify-content: flex-start;
+
+        .dd-lable {
+          position: relative;
+          letter-spacing: 1.95px;
+          left: 10px;
+          margin-right: 5px;
+        }
+
+        input {
+          display: flex;
+          background: none;
+          position: relative;
+          border: none;
+          width: 151px;
+          height: 15px;
+          margin-bottom: 6px;
+          left: 10px;
+          color: #000;
+          letter-spacing: 1.95px;
+          border-bottom: 1px solid #000;
+        }
+
+        input:focus {
+          outline: none; // Removes the box around the input area on 'focus'
+        }
+
+        #dropdown-password {
+          width: 170px;
+        }
+      }
+
+      /* Dropdown-Menu | Container */
+      .dropdown-content-menu {
+        display: flex;
+        font-family: Tahoma;
+        width: 310px;
+        height: 266px;
+        top: 9vh;
+        position: absolute;
+
+        // Makes the menu container thinner
+        @media screen and (min-width: 970px) {
+          width: 100%;
+          height: auto;
+          position: relative;
+          top: 79px;
+        }
+      }
+
+      ol {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 36px;
+        flex-shrink: 0;
+
+        // Makes the list vertical on larger screens
+        @media screen and (min-width: 970px) {
+          justify-content: center;
+          flex-direction: row;
+          width: 100%;
+        }
+
+        li:hover {
+          background: rgba(255, 255, 255, 0.5);
+        }
+
+        li {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 310px;
+          gap: 10px;
+          padding: 6px;
+          font-weight: 400;
+          border: 1px solid rgba(0, 0, 0, 0.788);
+
+          // Makes the list buttons smaller on a bigger screen
+          @media screen and (min-width: 970px) {
+            max-width: 160px;
+            padding: 1px;
+            display: flex;
+            justify-content: center;
+            cursor: pointer;
+          }
+
+          a {
+            all: unset;
+            display: contents;
+
+            h3 {
+              color: #000;
+              font-style: normal;
+              letter-spacing: 2px;
+              margin-left: 5px;
+
+              @media screen and (min-width: 970px) {
+                margin: 0;
+                font-size: 20px;
+              }
+            }
+
+            p {
+              color: #000;
+              text-align: right;
+              font-size: 10px;
+              font-weight: 400;
+              letter-spacing: 1.5px;
+              margin-right: 5px;
+
+              // Removes the menu text on larger screens.
+              @media screen and (min-width: 970px) {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+
+      .dropdown-language {
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 8px;
+        gap: 10px;
+        border: 1px solid black;
+        top: 50vh;
+
+        // Moves the language option on a bigger screen
+        @media screen and (min-width: 970px) {
+          position: relative;
+          border: none;
+          right: 7%;
+          bottom: 0;
+          padding: 0;
+          top: 2vh;
+        }
+
+        button {
+          width: 100%;
+          height: 100%;
+          letter-spacing: 3px;
+          font-size: 15px;
+          background: local;
+          border: none;
+          cursor: pointer;
+          outline: inherit;
+
+          :hover {
+            background: rgba(255, 255, 255, 0.5);
+          }
+        }
+
+        .se {
+          font-weight: 400;
+
+          @media screen and (min-width: 970px) {
+            font-size: 18px;
+          }
+
+          &:hover,
+          &:focus {
+            font-weight: 700;
+          }
+        }
+
+        .separator {
+          height: 15px;
+          border: 1px solid black;
+        }
+
+        .en {
+          font-weight: 400;
+
+          @media screen and (min-width: 970px) {
+            font-size: 18px;
+          }
+
+          &:hover,
+          &:focus {
+            font-weight: 700;
+          }
+        }
+      }
+
+      /* Dropdown-Footer */
+      .dropdown-footer {
+        position: absolute;
+        width: 100%;
+        height: 327px;
+        background-color: $colorBlack;
+        bottom: 0;
+
+        // Removes the Dropdown-footer on a bigger screen
+        @media screen and (min-width: 970px) {
+          display: none;
+        }
+
+        .header-footer {
+          height: 227px;
+          bottom: 0;
+
+          .text {
+            min-width: 330px;
+            max-height: 80%;
+            display: flex;
+            justify-content: space-evenly;
+          }
+
+          .contact {
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 150px;
+            margin: 10px;
+            text-align: center;
+          }
+          address {
+            padding-top: 20px;
+
+            .titleAddress {
+              font-size: 1.4em;
+              color: $colorWhite;
+            }
+
+            p {
+              color: $colorWhite;
+            }
+          }
+
+          .list {
+            @extend .contact;
+            border-left: 1px solid $colorWhite;
+            padding-top: 15px;
+          }
+          h3 {
+            color: $colorWhite;
+          }
+          a {
+            text-decoration: none;
+            color: $colorWhite;
+            font-size: 10px;
+          }
+
+          .icon {
+            min-width: 330px;
+            height: 50px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            border-top: 1px solid $colorWhite;
+
+            .fb {
+              font-size: 24px;
+              margin: 5px;
+              color: $colorWhite;
+            }
+
+            .instagram {
+              @extend .fb;
+            }
+
+            .twitter {
+              @extend .fb;
+            }
+
+            .klarna {
+              @extend .fb;
+            }
+
+            .visa {
+              @extend .fb;
+            }
+
+            .mastercard {
+              @extend .fb;
+            }
+          }
+
+          .bottomIcons {
+            padding: 5px;
+            color: $colorWhite;
+            font-size: 24px;
+            display: none;
+
+            .socialMedia {
+              ul {
+                display: none;
+                flex-direction: column;
+                justify-content: center;
+                gap: 15%;
+                list-style: none;
+              }
+            }
+            .payMethods {
+              @extend .socialMedia;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: flex;
+  }
+}
+
+/* Phone button | Bottom of the page */
+.phone-dropdown {
+  // Phone dropdown container
+  position: fixed;
+  bottom: 47px;
+  right: 5px;
+  width: 50px;
+  height: 50px;
+
+  @media screen and (min-width: 970px) {
+    display: none;
+  }
+
+  /* Toggle Button | Drop-down button */
+  .phone-toggle-btn {
+    // Phone dropdown button container
+    width: 50px;
+    height: 50px;
+
+    .phone-toggle-btn-icon {
+      // Phone dropdown button element
+      position: relative;
+      background: none;
+      border: none;
+      cursor: pointer;
+      outline: inherit;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      z-index: 1;
+
+      .phone-toggle-btn-icon-1 {
+        // Phine img in the button element
+        transition:
+          transform 0.3s ease,
+          border-radius 0.6s ease;
+        border-radius: 0;
+
+        &:hover {
+          border-radius: 50%;
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}
+.phone-dropdown-content {
+  // Phone content container
+  display: none;
+  position: absolute;
+  width: 210px;
+  height: 100px;
+  background-color: #4d7ea8;
+  left: -10rem;
+  bottom: 0;
+  border-radius: 30px 30px 0px 30px;
+
+  .phone-phone-nr {
+    // Phone number content
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    letter-spacing: 1.95px;
+    font-weight: 400;
+    text-decoration-line: underline;
+  }
+
+  .phone-text {
+    // Phone text content
+    width: 100%;
+    height: 50px;
+    letter-spacing: 3px;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration-line: none;
+    font-family: Tahoma;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.phone-dropdown:hover .phone-dropdown-content {
+  display: block;
+}

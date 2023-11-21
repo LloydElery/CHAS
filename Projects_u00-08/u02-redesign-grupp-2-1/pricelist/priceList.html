@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icon, Description, Title, CSS-->
+    <link rel="icon" type="image/png" href="img/Icon-Resto.png">
+    <title>Våra priser | Resto culinair</title>
+    <meta name="author" content="Sebah Abubeker">
+    <meta name="description" content="Vi har de bästa priserna med högsta kvalitet. Restaurang är där du hittar det du behöver!">
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="/style.css">
+
+  <!-- Style link for footer icon -->
+  <script src="https://kit.fontawesome.com/a0315d2788.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body class="priceBody">
+    <!-- HEADER SECTION -->
+    <header class="header-container">
+      <!-- Background gradient | Container -->
+
+      <!-- Header Section -->
+      <section class="header-section">
+        <!-- Container for login logo -->
+        <div class="login">
+          <button class="login-btn">
+            <img
+              class="login-btn-icon-1"
+              src="/assets/person-vector.svg"
+              alt="Login button"
+            />
+            <img
+              class="login-btn-icon-2"
+              src="/assets/person-dark.svg"
+              alt="Login button (clicked)"
+            />
+          </button>
+        </div>
+
+        <!-- Container for search logo -->
+        <div class="search">
+          <button class="search-btn">
+            <span class="search-label">
+              <img src="/assets/search.svg" alt="Search button" />
+            </span>
+          </button>
+          <input
+            type="text"
+            id="searchInput"
+            class="search-input"
+            placeholder="Search..."
+          />
+        </div>
+
+        <!-- Container for Resto Culinair logo -->
+        <a href="/index.html">
+          <div class="resto">
+            <img
+              class="resto-logo-1"
+              src="/img/Resto-logo-text-and-icon.png"
+              alt="Resto Culinair Logo"
+            />
+            <img
+              class="resto-logo-2"
+              src="/img/desktop-logo-resto-culinair.png"
+              alt="Resto Culinair Logo"
+            />
+          </div>
+        </a>
+
+        <!-- DROPDOWN -->
+        <div class="dropdown">
+          <!-- Container for drop-down logo -->
+          <div class="toggle-btn">
+            <button class="toggle-btn-icon">
+              <img
+                class="menu-btn-icon-1"
+                src="/assets/menu.svg"
+                alt="Menu button"
+              />
+              <img
+                class="menu-btn-icon-2"
+                src="/assets/x.svg"
+                alt="Menu button"
+              />
+            </button>
+          </div>
+
+          <!-- Dropdown-Content | Container -->
+          <div class="dropdown-content">
+            <!-- Dropdown-Login | Container -->
+            <div class="dropdown-content-login">
+              <form class="dd-form" action="/login" method="post">
+                <img
+                  class="dd-login-icon"
+                  src="/assets/person-small.svg"
+                  alt="Profile icon"
+                />
+                <span class="dd-lable">customer nr:</span>
+                <input
+                  type="text"
+                  name="customer nr"
+                  id="dd-customer-nr"
+                  size="10"
+                  maxlength="6"
+                />
+                <img
+                  class="dd-login-icon"
+                  src="/assets/lock.svg"
+                  alt="password icon"
+                />
+                <span class="dd-lable">password:</span>
+                <input
+                  type="password"
+                  name="password"
+                  id="dropdown-password"
+                  size="10"
+                  maxlength="25"
+                />
+              </form>
+            </div>
+
+            <!-- Dropdown-Menu | Container -->
+            <div class="dropdown-content-menu">
+              <ol>
+                <li>
+                  <a href="/index.html">
+                    <h3>Hem</h3>
+                    <p>Hemsida</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="/News-Page/Nyheter.html">
+                    <h3>Nyheter</h3>
+                    <p>Läs om det senaste i ditt område</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="/contact/contact.html">
+                    <h3>Kontakt</h3>
+                    <p>Kontakta oss vid frågor</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="/smullbox/smullbox.html">
+                    <h3>Till Festen</h3>
+                    <p>Hyr det du inte redan har</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="/membership-page/members.html">
+                    <h3>Medlemmar</h3>
+                    <p>Våra medlemmar & platser</p>
+                  </a>
+                </li>
+              </ol>
+            </div>
+            <!-- Dropdown-Language-BTN | Container -->
+            <div class="dropdown-language">
+              <button class="se">Svenska</button>
+              <span class="separator"></span>
+              <button class="en">English</button>
+            </div>
+
+            <!-- DROPDOWN FOOTER SECTION -->
+            <div class="dropdown-footer">
+              <!-- Container | DD Footer -->
+
+              <div class="header-footer">
+                <!-- Container | Text and information -->
+
+                <section class="text">
+                  <!-- Container | contact information -->
+
+                  <address class="contact">
+                    <p class="titleAddress">Adress</p>
+                    <br />
+                    <p>Resto Culinair</p>
+                    <p>leftline 5</p>
+                    <p>111 11 Stockholm</p>
+                  </address>
+                  <!-- Container for list information -->
+                  <div class="list">
+                    <h3>Genvägar</h3>
+                    <div><a href="/index.html">Startsidan</a></div>
+                    <div><a href="/nyheter_test.html">Nyheter</a></div>
+                    <div><a href="/members.html">Medlem</a></div>
+                    <div><a href="/priceList.html">Prislista</a></div>
+                    <div><a href="/smullbox.html">Smullbox</a></div>
+                    <div><a href="/contact.html">Kontakt</a></div>
+                  </div>
+
+                  <!-- Not visible on a small screen, appears when the smallest px is 768-->
+                  <div class="bottomIcons">
+                    <div class="socialMedia">
+                      <h3>Följ oss</h3>
+                      <ul>
+                        <li>
+                          <span class="icons"
+                            ><i class="fa-brands fa-square-facebook"></i
+                          ></span>
+                        </li>
+                        <li>
+                          <span class="icons"
+                            ><i class="fa-brands fa-square-instagram"></i
+                          ></span>
+                        </li>
+                        <li>
+                          <span class="icons"
+                            ><i class="fa-brands fa-square-twitter"></i
+                          ></span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="payMethods">
+                      <h3>Betalmedel</h3>
+                      <ul>
+                        <li>
+                          <span class="icons">K.</span>
+                        </li>
+                        <li>
+                          <span class="icons"
+                            ><i class="fa-brands fa-cc-visa"></i
+                          ></span>
+                        </li>
+                        <li>
+                          <span class="icons"
+                            ><i class="fa-brands fa-cc-mastercard"></i
+                          ></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+
+                <!-- Icon Section -->
+                <!-- Not visible on large screen, appears when max px is 767 -->
+                <div class="icon">
+                  <!-- Conatiner for icon 1 -->
+                  <div class="fb">
+                    <span><i class="fa-brands fa-square-facebook"></i></span>
+                  </div>
+                  <!-- Conatiner for icon 2 -->
+                  <div class="instagram">
+                    <span><i class="fa-brands fa-square-instagram"></i></span>
+                  </div>
+                  <!-- Conatiner for icon 3 -->
+                  <div class="twitter">
+                    <span><i class="fa-brands fa-square-twitter"></i></span>
+                  </div>
+                  <!-- Conatiner for icon 4 -->
+                  <div class="klarna"><span>K.</span></div>
+                  <!-- Conatiner for icon 5 -->
+                  <div class="visa">
+                    <span><i class="fa-brands fa-cc-visa"></i></span>
+                  </div>
+                  <!-- Conatiner for icon 6 -->
+                  <div class="mastercard">
+                    <span><i class="fa-brands fa-cc-mastercard"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Container for phone icon -->
+        <div class="phone-dropdown">
+          <div class="phone-toggle-btn">
+            <button class="phone-toggle-btn-icon">
+              <img
+                class="phone-toggle-btn-icon-1"
+                src="/assets/Phone-Icon.svg"
+                alt="Phone-Button"
+              />
+            </button>
+          </div>
+          <div class="phone-dropdown-content">
+            <span class="phone-text">Call & Order</span>
+            <div class="phone-phone-nr">08 555 69 76</div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- Main pricing section -->
+    <main class="price-wrapper">
+
+      <!-- CARD BODY -->
+      <div class="card-body">
+
+        <!-- CARD HEADEING -->
+        <div class="cards-heading">
+          <h1>Högkvalitativ service med bra priser!</h1>
+        </div>
+
+      <!-- CARDS WRAPPER -->
+      <section class="cards-wrapper" >
+
+        <!-- Individual service cards -->
+
+      <!-- Card 1 - Storage -->
+      <div class="price-card first-card" tabindex="0">
+        <!-- Pricing Image -->
+      <div class="card-image-box">
+        <img alt="En lager fullt med säker" src="img/storage.png" loading="lazy">
+     </div>
+     <!-- Pricing Text -->
+     <div class="card-content">
+     <div class="service-text">
+      <h2 class="price-card-h">Lagring</h2>
+      <p class="price-card-p">Vi tillhandahåller matförvaring till ditt företag</p>
+     </div>
+     <!-- Pricing buttons -->
+     <div class="price-btn-box">
+      <div class="price-btn-box1">
+      <button type="button" class="btnprice btn1"><span class="btn-txt">5$ per Dag</span></button>
+      <button type="button" class="btnprice btn2"><span class="btn-txt">20$ per Månad</span></button>
+    </div>
+      <div class="price-btn-box2">
+        <button type="button" class="btnprice btn3"><span class="btn-txt">60$ i År</span></button>
+      </div>
+    </div>
+    </div>
+     </div>
+
+     <!-- Card 2 - Digital Menu -->
+     <div class="price-card second-card" tabindex="0">
+      <!-- Pricing Image -->
+     <div class="card-image-box">
+        <img alt="Digitalt meny i mobil och skärm" src="img/digitalM.png" loading="lazy">
+     </div>
+     <!-- Pricing Text -->
+     <div class="card-content">
+     <div class="service-text">
+      <h2 class="price-card-h">Digital meny</h2>
+      <p class="price-card-p">Vi gör tillgängliga och fantastiska digitala menyer!</p>
+     </div>
+     <!-- Pricing buttons -->
+     <div class="price-btn-box">
+      <div class="price-btn-box1">
+      <button type="button" class="btnprice btn1"><span class="btn-txt">10$ per Meny</span></button>
+      <button type="button" class="btnprice btn2"><span class="btn-txt">60$ per Meny</span></button>
+    </div>
+      <div class="price-btn-box2">
+        <button type="button" class="btnprice btn3"><span class="btn-txt">30$ per Månad</span></button>
+      </div>
+    </div>
+    </div>
+     </div>
+
+     <!-- Card 3 - Buffet -->
+     <div class="price-card third-card" tabindex="0">
+     <!-- Pricing Image -->
+     <div class="card-image-box">
+        <img alt="Mat buffet i hotel" src="img/HotelB.png" loading="lazy">
+     </div>
+      <!-- Pricing Text -->
+     <div class="card-content">
+     <div class="service-text">
+      <h2 class="price-card-h">Buffé</h2>
+      <p class="price-card-p">Vi erbjuder bufféer för olika tillfällen!</p>
+     </div>
+      <!-- Pricing buttons -->
+     <div class="price-btn-box">
+      <div class="price-btn-box1">
+      <button type="button" class="btnprice btn1"><span class="btn-txt">20$ per Service</span></button>
+      <button type="button" class="btnprice btn2"><span class="btn-txt">50$ i Månad</span></button>
+    </div>
+      <div class="price-btn-box2">
+        <button type="button" class="btnprice btn3"><span class="btn-txt">600$ i År</span></button>
+      </div>
+    </div>
+      </div>
+     </div>
+
+      <!-- Card 4 - Manpower -->
+     <div class="price-card forth-card" tabindex="0">
+      <!-- Pricing Image -->
+     <div class="card-image-box">
+        <img alt="Två arbetare jobbar och är glad"  src="img/manPower.png" loading="lazy">
+     </div>
+      <!-- Pricing Text -->
+     <div class="card-content">
+     <div class="service-text">
+      <h2 class="price-card-h">Manpower</h2>
+      <p class="price-card-p">Vi har arbetare för olika tillfällen!</p>
+      </div>
+      <!-- Pricing buttons -->
+      <div class="price-btn-box">
+        <div class="price-btn-box1">
+        <button type="button" class="btnprice btn1"><span class="btn-txt">400$ per Service</span></button>
+        <button type="button" class="btnprice btn2"><span class="btn-txt">300$ i Månad</span></button>
+      </div>
+        <div class="price-btn-box2">
+          <button type="button" class="btnprice btn3"><span class="btn-txt">600$ i År</span></button>
+        </div>
+      </div>
+     </div>
+    </div>
+
+      <!-- Card 5 - Mini market -->
+     <div class="price-card fifth-card" tabindex="0">
+       <!-- Pricing Image -->
+     <div class="card-image-box">
+        <img alt="Mat i mini-marknaden" src="img/miniM.png" loading="lazy">
+     </div>
+      <!-- Pricing Text -->
+     <div class="card-content">
+     <div class="service-text">
+      <h2 class="price-card-h">Mini-marknad</h2>
+      <p class="price-card-p">Vi har minimarknader som du kan handla från!</p>
+     </div>
+       <!-- Pricing buttons -->
+     <div class="price-btn-box">
+      <div class="price-btn-box1">
+      <button type="button" class="btnprice btn1"><span class="btn-txt">20$ per Service</span></button>
+      <button type="button" class="btnprice btn2"><span class="btn-txt">2$ i Månad</span></button>
+    </div>
+      <div class="price-btn-box2">
+        <button type="button" class="btnprice btn3"><span class="btn-txt">60$ i År</span></button>
+      </div>
+    </div>
+    </div>
+     </div>
+    </section>
+
+    </div>
+
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+      <!-- Text and information Section -->
+      <section class="textFooter">
+        <!-- Container for contact information -->
+        <address class="contactF">
+          <p class="footerP">Adress</p>
+          <br>
+          <p class="footerP">Resto Culinair</p>
+          <p class="footerP">leftline 5</p>
+          <p class="footerP">111 11 Stockholm</p>
+        </address>
+        <!-- Container for list information -->
+        <div class="listFooter">
+          <h3 class="footerH3">Genvägar</h3>
+          <div><a class="footerA" href="/index.html">Startsidan</a></div>
+          <div><a class="footerA" href="/News-Page/Nyheter.html">Nyheter</a></div>
+          <div><a class="footerA" href="/membership-page/members.html">Medlem</a></div>
+          <div><a class="footerA" href="/pricelist/priceList.html">Prislista</a></div>
+          <div><a class="footerA" href="/smullbox/smullbox.html">Smullbox</a></div>
+          <div><a class="footerA" href="/contact/contact.html">Kontakt</a></div>
+        </div>
+
+        <!-- Not visible on a small screen, appears when the smallest px is 768-->
+        <div class="bottomIcons">
+          <div class="socialMedia">
+            <h3 class="footerH3">Följ oss</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://www.facebook.com/StarWars.Nordics/?brand_redir=169299103121699"
+                  ><span class="icons"
+                    ><i class="fa-brands fa-square-facebook"></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/starwars/"
+                  ><span class="icons"
+                    ><i class="fa-brands fa-square-instagram"></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/starwars">
+                  <span class="icons"
+                    ><i class="fa-brands fa-square-twitter"></i></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="payMethods">
+            <h3 class="footerH3">Betalmedel</h3>
+            <ul>
+              <li>
+                <a href="https://www.paypal.com">
+                  <span class="icons"
+                    ><i class="fa-brands fa-cc-paypal"></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.visa.se/"
+                  ><span class="icons"
+                    ><i class="fa-brands fa-cc-visa"></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.mastercard.se/sv-se.html"
+                  ><span class="icons"
+                    ><i class="fa-brands fa-cc-mastercard"></i></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Icon Section -->
+      <!-- Not visible on large screen, appears when max px is 767 -->
+      <div class="iconFooter">
+        <!-- Conatiner for icon 1 -->
+        <a
+          href="https://www.facebook.com/StarWars.Nordics/?brand_redir=169299103121699"
+          ><div class="fb">
+            <span><i class="fa-brands fa-square-facebook"></i></span></div
+        ></a>
+        <!-- Conatiner for icon 2 -->
+        <a href="https://www.instagram.com/starwars/"
+          ><div class="instagram">
+            <span><i class="fa-brands fa-square-instagram"></i></span></div
+        ></a>
+        <!-- Conatiner for icon 3 -->
+        <a href="https://twitter.com/starwars"
+          ><div class="twitter">
+            <span><i class="fa-brands fa-square-twitter"></i></span></div
+        ></a>
+        <!-- Conatiner for icon 4 -->
+        <a href="https://www.paypal.com"
+          ><div class="klarna">
+            <span><i class="fa-brands fa-cc-paypal"></i></span></div
+        ></a>
+        <!-- Conatiner for icon 5 -->
+        <a href="https://www.visa.se/"
+          ><div class="visa">
+            <span><i class="fa-brands fa-cc-visa"></i></span></div
+        ></a>
+        <!-- Conatiner for icon 6 -->
+        <a href="https://www.mastercard.se/sv-se.html"
+          ><div class="mastercard">
+            <span><i class="fa-brands fa-cc-mastercard"></i></span></div
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>

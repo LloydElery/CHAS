@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nyheter, mat, drink, service">
+    <meta name="keywords" content="Resto Culinair, Köttkonsumtion, Alkoholskatt, Svensk Köttkonsumtion, Catring, cafe, mat, restaurang, fika, AW, nyheter">
+    <meta name="author" content="Alexander Abreu">
+    <!-- Tab Text -->
+    <title>Resto Culinair | Supply</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo-min.png">
+    <!-- STYLE SHEETS -->
+
+    <!-- Reset file for margin & padding -->
+    <link rel="stylesheet" href="reset.css">
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="/style.css">
+    <!-- <link rel="stylesheet" href="contact.css" /> -->
+
+    <!-- FONTS & ICONS -->
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script
+      src="https://kit.fontawesome.com/a0315d2788.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <!-- HEADER SECTION -->
+  <body class="newsBody">
+  <header class="header-container">
+    <!-- Background gradient | Container -->
+
+    <!-- Header Section -->
+    <section class="header-section">
+      <!-- Container for login logo -->
+      <div class="login">
+        <button class="login-btn">
+          <img
+            class="login-btn-icon-1"
+            src="/assets/person-vector.svg"
+            alt="Login button">
+          <img
+            class="login-btn-icon-2"
+            src="/assets/person-dark.svg"
+            alt="Login button (clicked)">
+        </button>
+      </div>
+
+      <!-- Container for search logo -->
+      <div class="search">
+        <button class="search-btn">
+          <span class="search-label">
+            <img src="/assets/search.svg" alt="Search button">
+          </span>
+        </button>
+        <input
+          type="text"
+          id="searchInput"
+          class="search-input"
+          placeholder="Search...">
+      </div>
+
+      <!-- Container for Resto Culinair logo -->
+      <a href="/index.html">
+        <div class="resto">
+          <img
+            class="resto-logo-1"
+            src="/img/Resto-logo-text-and-icon.png"
+            alt="Resto Culinair Logo">
+          <img
+            class="resto-logo-2"
+            src="/img/desktop-logo-resto-culinair.png"
+            alt="Resto Culinair Logo">
+        </div>
+      </a>
+
+      <!-- DROPDOWN -->
+      <div class="dropdown">
+        <!-- Container for drop-down logo -->
+        <div class="toggle-btn">
+          <button class="toggle-btn-icon">
+            <img
+              class="menu-btn-icon-1"
+              src="/assets/menu.svg"
+              alt="Menu button">
+            <img
+              class="menu-btn-icon-2"
+              src="/assets/x.svg"
+              alt="Menu button">
+          </button>
+        </div>
+
+        <!-- Dropdown-Content | Container -->
+        <div class="dropdown-content">
+          <!-- Dropdown-Login | Container -->
+          <div class="dropdown-content-login">
+            <form class="dd-form" action="/login" method="post">
+              <img
+                class="dd-login-icon"
+                src="/assets/person-small.svg"
+                alt="Profile icon">
+              <span class="dd-lable">customer nr:</span>
+              <input
+                type="text"
+                name="customer nr"
+                id="dd-customer-nr"
+                size="10"
+                maxlength="6">
+              <img
+                class="dd-login-icon"
+                src="/assets/lock.svg"
+                alt="password icon">
+              <span class="dd-lable">password:</span>
+              <input
+                type="password"
+                name="password"
+                id="dropdown-password"
+                size="10"
+                maxlength="25">
+            </form>
+          </div>
+
+          <!-- Dropdown-Menu | Container -->
+          <div class="dropdown-content-menu">
+            <ol>
+              <li>
+                <a href="/News-Page/Nyheter.html">
+                  <h3>Nyheter</h3>
+                  <p>Läs om det senaste i ditt område</p>
+                </a>
+              </li>
+              <li>
+                <a href="/contact/contact.html">
+                  <h3>Kontakt</h3>
+                  <p>Kontakta oss vid frågor</p>
+                </a>
+              </li>
+              <li>
+                <a href="/smullbox/smullbox.html">
+                  <h3>Till Festen</h3>
+                  <p>Hyr det du inte redan har</p>
+                </a>
+              </li>
+              <li>
+                <a href="/membership-page/members.html">
+                  <h3>Medlemmar</h3>
+                  <p>Våra medlemmar & platser</p>
+                </a>
+              </li>
+              <li>
+                <a href="/pricelist/priceList.html">
+                  <h3>Prislista</h3>
+                  <p>Skapa en meny</p>
+                </a>
+              </li>
+            </ol>
+          </div>
+          <!-- Dropdown-Language-BTN | Container -->
+          <div class="dropdown-language">
+            <button class="se">Svenska</button>
+            <span class="separator"></span>
+            <button class="en">English</button>
+          </div>
+
+          <!-- DROPDOWN FOOTER SECTION -->
+          <div class="dropdown-footer">
+            <!-- Container | DD Footer -->
+
+            <div class="header-footer">
+              <!-- Container | Text and information -->
+
+              <section class="text">
+                <!-- Container | contact information -->
+
+                <address class="contact">
+                  <p class="titleAddress">Adress</p>
+                  <br>
+                  <p>Resto Culinair</p>
+                  <p>leftline 5</p>
+                  <p>111 11 Stockholm</p>
+                </address>
+                <!-- Container for list information -->
+                <div class="list">
+                  <h3>Genvägar</h3>
+                  <div><a href="/index.html">Startsidan</a></div>
+                  <div><a href="/nyheter_test.html">Nyheter</a></div>
+                  <div><a href="/members.html">Medlem</a></div>
+                  <div><a href="/priceList.html">Prislista</a></div>
+                  <div><a href="/smullbox.html">Smullbox</a></div>
+                  <div><a href="/contact.html">Kontakt</a></div>
+                </div>
+
+                <!-- Not visible on a small screen, appears when the smallest px is 768-->
+                <div class="bottomIcons">
+                  <div class="socialMedia">
+                    <h3>Följ oss</h3>
+                    <ul>
+                      <li>
+                        <span class="icons"
+                          ><i class="fa-brands fa-square-facebook"></i
+                        ></span>
+                      </li>
+                      <li>
+                        <span class="icons"
+                          ><i class="fa-brands fa-square-instagram"></i
+                        ></span>
+                      </li>
+                      <li>
+                        <span class="icons"
+                          ><i class="fa-brands fa-square-twitter"></i
+                        ></span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="payMethods">
+                    <h3>Betalmedel</h3>
+                    <ul>
+                      <li>
+                        <span class="icons">K.</span>
+                      </li>
+                      <li>
+                        <span class="icons"
+                          ><i class="fa-brands fa-cc-visa"></i
+                        ></span>
+                      </li>
+                      <li>
+                        <span class="icons"
+                          ><i class="fa-brands fa-cc-mastercard"></i
+                        ></span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </section>
+
+              <!-- Icon Section -->
+              <!-- Not visible on large screen, appears when max px is 767 -->
+              <div class="icon">
+                <!-- Conatiner for icon 1 -->
+                <div class="fb">
+                  <span><i class="fa-brands fa-square-facebook"></i></span>
+                </div>
+                <!-- Conatiner for icon 2 -->
+                <div class="instagram">
+                  <span><i class="fa-brands fa-square-instagram"></i></span>
+                </div>
+                <!-- Conatiner for icon 3 -->
+                <div class="twitter">
+                  <span><i class="fa-brands fa-square-twitter"></i></span>
+                </div>
+                <!-- Conatiner for icon 4 -->
+                <div class="klarna"><span>K.</span></div>
+                <!-- Conatiner for icon 5 -->
+                <div class="visa">
+                  <span><i class="fa-brands fa-cc-visa"></i></span>
+                </div>
+                <!-- Conatiner for icon 6 -->
+                <div class="mastercard">
+                  <span><i class="fa-brands fa-cc-mastercard"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Container for phone icon -->
+      <div class="phone-dropdown">
+        <div class="phone-toggle-btn">
+          <button class="phone-toggle-btn-icon">
+            <img
+              class="phone-toggle-btn-icon-1"
+              src="/assets/Phone-Icon.svg"
+              alt="Phone-Button">
+          </button>
+        </div>
+        <div class="phone-dropdown-content">
+          <span class="phone-text">Call & Order</span>
+          <div class="phone-phone-nr">08 555 69 76</div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+<!-- WRAPPER -->
+
+<main class="newsWrapper">
+    <div class="container-resto-culinair">
+    
+       <div class="hero-image">
+        <div id="center-resto-culinair">
+          <img src="/News-Page/img/resto-culinair.webp" alt="hero-place" class="resto-culinair">
+        <div class="center-hero-image"><h3 style="font-size:4vw;">En Värld av Smaker:<br>Få De Senaste Nyheterna</h3><br>
+         
+ 
+        <div class="centered-dropdown">
+          <div class="dropdown1">
+            <div onclick="myFunction1()" class="dropbtn"><b>Sort </b><i class="fa fa-chevron-down"></i></div>
+            <div id="myDropdown1" class="dropdown-content1">
+              <a href="#Dyrare-Skolmat">Dyrare Skolmat</a>
+              <a href="#Kottkonsumtion">Svensk Köttkonsumtion</a>
+              <a href="#Alkoholskatt">Ändring av Alkoholskatt</a>
+              <a href="#Catring">Välkommen till Resto Culinair Catring</a>
+              <a href="#hollandais">Hollandaisesås</a>
+              <a href="#Upptackt">Upptäck Sandefjordsås</a>
+            </div>
+          </div>
+       
+    
+        <div class="dropdown1">
+            <h4 onclick="myFunction2()" class="dropbtn"><b>Filter</b> <i class="fa fa-chevron-down"></i>
+            </h4>
+            <div id="myDropdown2" class="dropdown-content1">
+              <a href="#Date1">2023.09.21 09:00</a>
+              <a href="#Date2">2023.10.27 20:00</a>
+              <a href="#Date3">2023.10.15 13:00</a>
+              <a href="#Date4">2023.10.20 13:00</a>
+              <a href="#Date5">2023.10.24 09:00</a>
+              <a href="#Date6">2023.10.26 14:00</a>    
+     </div>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="flex-container">
+  <div class="flex-item-left">
+  <img src="/News-Page/img/matskol.webp" alt="Salami" class="cafe" style="width:100%" loading="lazy">
+
+  <div class="flex-item-right">
+  <h3 id="Dyrare-Skolmat">Dyrare Skolmat: Utmaningar och Konsekvenser</h3><br>
+    <p class="FoodMenu_FoodIngredient">Som en ledande aktör inom cateringbranschen är Resto Culinair engagerad i att leverera högkvalitativ  </p>
+    <span class="dots">...</span>
+    <p class="extra">skolmat som inte bara är smakrik utan också hälsosam och prisvärd. Vi förstår de utmaningar som höjda kostnader för skolmat kan medföra och dess konsekvenser för elever, skolor och samhället som helhet.</p><br>
+    <input type="checkbox" id="btn1">   
+    <label for="btn1">
+    </label> <br><br>
+    <div id="Date1">2023.09.21 09:00</div>
+   
+  </div> 
+  </div>
+
+
+<div class="flex-item-left">
+<img src="/News-Page/img/svenskkött.webp" alt="Salami" class="cafe" style="width:100%" loading="lazy">
+
+
+<div class="flex-item-right">
+<h3 id="Kottkonsumtion">Svensk Köttkonsumtion: En Ökande Trend</h3><br>
+  <p class="FoodMenu_FoodIngredient">I takt med samhällets utveckling har det blivit allt tydligare att den svenska köttkonsumtionen har börjat växa.</p>
+ <span class="dots">...</span>
+ <p class="extra">På Resto Culinair är vi angelägna om att förstå och anpassa oss till dessa nya trender för att fortsätta erbjuda våra kunder högkvalitativ mat och service som är i linje med de senaste utvecklingarna.</p><br>
+  <input type="checkbox" id="btn">
+  <label for="btn"></label><br><br>
+  <div id="Date2">2023.10.27 20:00</div>
+  
+
+</div>
+</div>
+
+<div class="flex-item-left">
+<img src="/News-Page/img/alkohol.webp" alt="alkohol" class="alkohol" style="width:100%" loading="lazy">
+
+<div class="flex-item-right">
+<h3 id="Alkoholskatt">Ändring av Alkoholskatt</h3><br>
+  <p class="FoodMenu_FoodIngredient">Ändring av alkoholskatt från och med 1 januari 2024. Förändringar i alkoholskatten är ett ämne som har en betydande </p>
+  <span class="dots">...</span>
+  <p class="extra"> inverkan på både samhället och ekonomin. Här utforskar vi de senaste ändringarna i alkoholskatt och deras konsekvenser för både konsumenter och branschen. </p><br>
+  <input type="checkbox" id="btn2">
+  <label for="btn2"></label><br><br>
+  <div id="Date3">2023.10.15 13:00</div>
+</div> 
+</div>
+</div>
+
+
+<div class="flex-container">
+  <div class="flex-item-left">
+<img src="/News-Page/img/themarket.webp" alt="themarket" class="themarket" style="width:100%" loading="lazy">
+
+<div class="flex-item-right">
+<h3 id="Catring">Resto Culinair Catring: Passion för Mat och Service</h3><br>
+  <p class="FoodMenu_FoodIngredient">Vi på Resto Culinair är stolta över att erbjuda cateringtjänster som gör din speciella händelse till en oförglömlig upplevelse.</p>
+  <span class="dots">...</span>
+  <p class="extra">Oavsett om det är en bröllopsbankett, en privat middag eller något annat evenemang, har vi expertisen för att leverera de mest utsökta rätterna som kommer att imponera på dina gäster. Vi ser fram emot att samarbeta med dig för att skapa ett evenemang som kommer att skapa minnen i livet. Kontakta oss för en kostnadsfri konsultation och offert.</p><br>
+  <input type="checkbox" id="btn3">
+  <label for="btn3"></label><br><br>
+  <div id="Date4">2023.10.20 13:00</div>
+</div> 
+</div>
+
+<div class="flex-item-left">
+<img src="/News-Page/img/hollandaisesås.webp" alt="Salami" class="cafe" style="width:100%" loading="lazy">
+
+<div class="flex-item-right">
+<h3 id="hollandais">Hollandaisesås: En Smörig Klassiker i Köket</h3><br>
+<p class="FoodMenu_FoodIngredient">Hollandaisesås är en utsökt och smörig sås som har sitt ursprung i fransk matlagning. Den är känd för sin krämiga konsistens och rika smak.</p>
+<span class="dots">...</span>
+<p class="extra">Såsen tillverkas vanligtvis genom att smälta smör och sedan vispa det med äggulor och citronsaft tills det bildar en len emulsion. Hollandaisesås är en klassisk följeslagare till olika rätter, inklusive ägg Benedict, grillad sparris och fisk. Dess krämiga textur och distinkta smak har gjort den till en favorit i det franska och internationella köket.</p><br>
+<input type="checkbox" id="btn4">
+<label for="btn4"></label><br><br>
+<div id="Date5">2023.10.24 09:00</div>
+</div> 
+</div>
+
+<div class="flex-item-left">
+<img src="/News-Page/img/sandesås.webp" alt="Salami" class="cafe" style="width:100%" loading="lazy">
+
+<div class="flex-item-right">
+<h3 id="Upptackt">Upptäck Sandefjordsås - En Norsk Delikatess</h3><br>
+<p class="FoodMenu_FoodIngredient">Sandefjordsås är en härlig och krämig sås med rötter i den norska kuststaden Sandefjord. Denna sås är gjord med grädde, smör, och en touch av</p>
+<span class="dots">...</span>
+<p class="extra">citronsaft, vilket ger den en delikat balans mellan krämighet och friskhet. Sandefjordsås är en populär kompanjon till fiskrätter och är välkänd för att komplettera den rena smaken av färsk sjömat perfekt. Sandefjordsås har blivit en älskad del av det norska köket och en smakupplevelse som inte får missas för alla matälskare.</p><br>
+<input type="checkbox" id="btn5">
+<label for="btn5"></label><br><br>
+<div id="Date6">2023.10.26 14:00</div>
+</div>
+</div>
+</div>
+</main>
+
+
+ <!-- FOOTER SECTION -->
+ <footer>
+  <!-- Text and information Section -->
+  <section class="textFooter">
+    <!-- Container for contact information -->
+    <address class="contactF">
+      <p class="footerP">Adress</p>
+      <br>
+      <p class="footerP">Resto Culinair</p>
+      <p class="footerP">leftline 5</p>
+      <p class="footerP">111 11 Stockholm</p>
+    </address>
+    <!-- Container for list information -->
+    <div class="listFooter">
+      <h3 class="footerH3">Genvägar</h3>
+      <div><a class="footerA" href="/index.html">Startsidan</a></div>
+      <div><a class="footerA" href="/News-Page/Nyheter.html">Nyheter</a></div>
+      <div><a class="footerA" href="/membership-page/members.html">Medlem</a></div>
+      <div><a class="footerA" href="/pricelist/priceList.html">Prislista</a></div>
+      <div><a class="footerA" href="/smullbox/smullbox.html">Smullbox</a></div>
+      <div><a class="footerA" href="/contact/contact.html">Kontakt</a></div>
+    </div>
+
+    <!-- Not visible on a small screen, appears when the smallest px is 768-->
+    <div class="bottomIcons">
+      <div class="socialMedia">
+        <h3 class="footerH3">Följ oss</h3>
+        <ul>
+          <li>
+            <a
+              href="https://www.facebook.com/StarWars.Nordics/?brand_redir=169299103121699"
+              ><span class="icons"
+                ><i class="fa-brands fa-square-facebook"></i></span
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/starwars/"
+              ><span class="icons"
+                ><i class="fa-brands fa-square-instagram"></i></span
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/starwars">
+              <span class="icons"
+                ><i class="fa-brands fa-square-twitter"></i></span
+            ></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="payMethods">
+        <h3 class="footerH3">Betalmedel</h3>
+        <ul>
+          <li>
+            <a href="https://www.paypal.com">
+              <span class="icons"
+                ><i class="fa-brands fa-cc-paypal"></i></span
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.visa.se/"
+              ><span class="icons"
+                ><i class="fa-brands fa-cc-visa"></i></span
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.mastercard.se/sv-se.html"
+              ><span class="icons"
+                ><i class="fa-brands fa-cc-mastercard"></i></span
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Icon Section -->
+  <!-- Not visible on large screen, appears when max px is 767 -->
+  <div class="iconFooter">
+    <!-- Conatiner for icon 1 -->
+    <a
+      href="https://www.facebook.com/StarWars.Nordics/?brand_redir=169299103121699"
+      ><div class="fb">
+        <span><i class="fa-brands fa-square-facebook"></i></span></div
+    ></a>
+    <!-- Conatiner for icon 2 -->
+    <a href="https://www.instagram.com/starwars/"
+      ><div class="instagram">
+        <span><i class="fa-brands fa-square-instagram"></i></span></div
+    ></a>
+    <!-- Conatiner for icon 3 -->
+    <a href="https://twitter.com/starwars"
+      ><div class="twitter">
+        <span><i class="fa-brands fa-square-twitter"></i></span></div
+    ></a>
+    <!-- Conatiner for icon 4 -->
+    <a href="https://www.paypal.com"
+      ><div class="klarna">
+        <span><i class="fa-brands fa-cc-paypal"></i></span></div
+    ></a>
+    <!-- Conatiner for icon 5 -->
+    <a href="https://www.visa.se/"
+      ><div class="visa">
+        <span><i class="fa-brands fa-cc-visa"></i></span></div
+    ></a>
+    <!-- Conatiner for icon 6 -->
+    <a href="https://www.mastercard.se/sv-se.html"
+      ><div class="mastercard">
+        <span><i class="fa-brands fa-cc-mastercard"></i></span></div
+    ></a>
+  </div>
+</footer>
+
+<script>
+  /* When the user clicks on the button,
+  toggle between hiding and showing the dropdown content */
+  //function myFunction1() {
+   // document.getElementById("myDropdown1").classList.toggle("show");
+ // }
+  
+  // function filterFunction() {
+  //   var input, filter, ul, li, a, i;
+   //  input = document.getElementById("myInput");
+    // filter = input.value.toUpperCase();
+   //  div = document.getElementById("myDropdown1");
+   //  a = div.getElementsByTagName("a");
+    // for (i = 0; i < a.length; i++) {
+    //   txtValue = a[i].textContent || a[i].innerText;
+     //  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      //   a[i].style.display = "";
+      // } else {
+      //   a[i].style.display = "none";
+      // }
+   //  }
+  // }
+  // </script>
+  
+
+
+  <script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+   // function myFunction2() {
+   //   document.getElementById("myDropdown2").classList.toggle("show");
+   // }
+    
+   // function filterFunction() {
+    //  var input, filter, ul, li, a, i;
+    //  input = document.getElementById("myInput");
+    //  filter = input.value.toUpperCase();
+     // div = document.getElementById("myDropdown2");
+     // a = div.getElementsByTagName("a");
+     // for (i = 0; i < a.length; i++) {
+     //   txtValue = a[i].textContent || a[i].innerText;
+      //  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        //  a[i].style.display = "";
+        //} else {
+        //  a[i].style.display = "none";
+        //}
+      //}
+    //}
+   // </script>
+
+
+    
+   
+
+
+</body>
+</html>

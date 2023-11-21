@@ -1,0 +1,281 @@
+$colorBrown: #763a03;
+$colorLB: #c9f0ff;
+$colorDB: #4d7ea8;
+$colorSand: #ccad8f;
+$colorBlack: #000000;
+$colorW: #f5f5f5;
+
+.priceBody {
+width: 100%;
+height: auto;
+margin: 0;
+background: url(/pricelist/img/cake-balls-4139982_1280.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover; 
+
+.price-wrapper {
+  margin-top: 167px;
+  min-height: 913px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin-bottom: 7px;
+}
+
+.card-body {
+  position: relative;
+  background: linear-gradient(
+    hsl(29, 95%, 24%, 20%),
+    hsl(30, 37%, 68%, 20%)
+  );
+  
+  margin: 1.87% 4.87% 0.77% 5.13%; // top bottom left right
+  width: 90%;
+  min-height: 867px;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.card-image-box {
+  width: 100%;
+  min-width: 155px;
+  height: 125px;
+}
+
+.cards-heading {
+  width: 314px; 
+  height: 30px; 
+  margin-top: 22px;
+  overflow: visible;
+  text-align: center; 
+  word-wrap: break-word;
+  font-weight: 700;
+  position: relative; 
+}
+
+.cards-heading h1 {
+  position: absolute; 
+  margin-top: -60px;
+}
+
+p {
+  color:$colorDB;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.price-card{
+  width: 30%;
+  min-width: 156px;
+  max-width: 692px;
+  min-height: 250px;
+  height: auto;
+  margin-right: 8px;
+  margin-left: 8px;
+  display: inline-block;  
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  }
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+  .cards-wrapper {
+    margin-top: 29px;
+    height: calc(100% - 30px);
+  }
+
+  .first-card, .second-card {
+    margin-bottom: 35px;
+  }
+
+  .third-card, .forth-card {
+    margin-bottom: 34px;
+  }
+  .fifth-card {
+    margin-bottom: 6px;
+  }
+ 
+.card-image-box img{
+  width: 100%;
+  min-height: 156px;
+  min-height: 128px;
+  height: auto;
+  }
+ 
+.card-content{
+  min-height: 125px;
+  min-height: 156px;
+  height: auto;
+  width: 100%;
+  background: #CCAD8F;
+  position: relative;
+  }
+ 
+  .service-text {
+    margin: 0;
+    text-align: center;
+  }
+
+  .price-card-p, .price-card-h {
+    color: $colorBlack;
+    padding: 5px;
+  }
+.price-btn-box{
+  height: 43px;
+  width: 138px;
+  margin: 18px 8.99px 8px 8.9px;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-btn-box1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+
+.price-btn-box2 {
+  display: flex;
+  justify-content: center;
+}
+
+ .btnprice {
+ width: 65.62px; 
+ height: 17px;  
+//  padding: 10px; /* For tap target size */
+ background: $colorW; 
+ border-radius: 50px;
+ border: none;
+ margin-bottom: 5px;
+ transition: .3s linear;
+ }
+
+ 
+.btnprice:hover {
+  background: $colorLB;
+  cursor: pointer;
+}
+
+ .btn-txt {
+  width: /*51.24px*/ 100%; 
+  height: 7px; 
+  left: /*6.29px*/50%; 
+  top: /*4px*/50%;  
+  transform: translate(-50%, -50%);
+  text-align: center; 
+  color: $colorBlack; 
+  font-size: 7px; 
+  font-family: Tahoma; 
+  font-weight: 700;  
+ }
+
+ .btnprice:active {
+  background-color: $colorLB; 
+}
+
+//Foucs for tab navigation
+.price-card {
+  &:focus {
+      outline: 2px solid $colorBrown;
+  }
+}  
+.btnprice {
+  &:focus {
+      outline: 2px solid $colorDB;
+  }
+} 
+}
+
+
+@media only screen and (min-width: 800px) {
+    
+  .price-wrapper {
+     height: auto;
+
+     .cards-wrapper {
+      width: 85%;
+     }
+
+     .card-body {
+      height: auto;
+      margin: 0;
+      justify-content: center;
+      align-items: center;
+    }
+    .price-card {
+      min-width: 692px;
+      min-height: 654px;
+      width: 30%;
+      height: auto;
+    }
+  
+    .card-image-box img{
+      min-width: 692px;
+      height: 327px;
+      width: 100%;
+
+    }
+  
+    .card-content {
+      min-height: 327px;
+      min-width: 692px;
+      margin-top: 202px;
+    }
+
+    .cards-heading {
+      width: 1300px; 
+      margin-top: 11px;
+      margin-left: 2px;
+    }
+    
+    .cards-heading h1 {
+      font-size: 66px;
+      margin-top: -60px;
+    }
+
+    .service-text {
+      display: grid;
+      height: 163.5px;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    .price-card-h {
+      margin-top: 20px;
+      font-size: 42px;
+    }
+
+    .price-card-p {
+      font-size: 22px;
+    }
+    .price-btn-box {
+      height: 163.5px;
+      margin-top: 10px;
+      display: grid;
+      margin-left: 300px;
+      margin-top: 20px;
+      margin-bottom: 2px;
+      
+    }
+
+    .btnprice {
+      width: 150px;
+      height: 40px;
+      font-size: 16px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .btn-txt {
+      font-size: 16px;
+    }
+
+  }
+}
+

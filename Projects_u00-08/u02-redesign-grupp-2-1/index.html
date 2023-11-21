@@ -1,0 +1,768 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content="[Hero page] - Dennis[LloydElery]Jensen, [Grid pages] - Sebah"
+    />
+
+    <!-- Tab Text -->
+    <title>Resto Culinair | Supply</title>
+    <!-- Tab Icon -->
+    <link rel="icon" type="image/x-icon" href="/img/logo-min.png" />
+
+    <!-- STYLE SHEETS -->
+
+    <!-- Reset file for margin & padding -->
+    <link rel="stylesheet" href="/reset.css" />
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- FONTS & ICONS -->
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <script
+      src="https://kit.fontawesome.com/a0315d2788.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- snap scroll anker div | not visible -->
+    <!--     <div class="fp-snap-scroll-anker">
+      <p>front page anker for snap-scroll</p>
+    </div> -->
+    <!-- HEADER SECTION -->
+
+    <header class="header-container">
+      <!-- Background gradient | Container -->
+
+      <!-- Header Section -->
+      <section class="header-section">
+        <!-- Container for login logo -->
+        <div class="login">
+          <button class="login-btn">
+            <img
+              class="login-btn-icon-1"
+              src="/assets/person-vector.svg"
+              alt="Login button"
+            />
+            <img
+              class="login-btn-icon-2"
+              src="/assets/person-dark.svg"
+              alt="Login button (clicked)"
+            />
+          </button>
+        </div>
+
+        <!-- Container for search logo -->
+        <div class="search">
+          <button class="search-btn">
+            <span class="search-label">
+              <img src="/assets/search.svg" alt="Search button" />
+            </span>
+          </button>
+          <input
+            type="text"
+            id="searchInput"
+            class="search-input"
+            placeholder="Search..."
+          />
+        </div>
+
+        <!-- Container for Resto Culinair logo -->
+        <a href="/index.html">
+          <div class="resto">
+            <img
+              class="resto-logo-1"
+              src="/img/Resto-logo-text-and-icon.png"
+              alt="Resto Culinair Logo"
+            />
+            <img
+              class="resto-logo-2"
+              src="/img/desktop-logo-resto-culinair.png"
+              alt="Resto Culinair Logo"
+            />
+          </div>
+        </a>
+
+        <!-- DROPDOWN -->
+        <div class="dropdown">
+          <!-- Container for drop-down logo -->
+          <div class="toggle-btn">
+            <button class="toggle-btn-icon">
+              <img
+                class="menu-btn-icon-1"
+                src="/assets/menu.svg"
+                alt="Menu button"
+              />
+              <img
+                class="menu-btn-icon-2"
+                src="/assets/x.svg"
+                alt="Menu button"
+              />
+            </button>
+          </div>
+
+          <!-- Dropdown-Content | Container -->
+          <div class="dropdown-content">
+            <!-- Dropdown-Login | Container -->
+            <div class="dropdown-content-login">
+              <form class="dd-form" action="/login" method="post">
+                <img
+                  class="dd-login-icon"
+                  src="/assets/person-small.svg"
+                  alt="Profile icon"
+                />
+                <span class="dd-lable">customer nr:</span>
+                <input
+                  type="text"
+                  name="customer nr"
+                  id="dd-customer-nr"
+                  size="10"
+                  maxlength="6"
+                />
+                <img
+                  class="dd-login-icon"
+                  src="/assets/lock.svg"
+                  alt="password icon"
+                />
+                <span class="dd-lable">password:</span>
+                <input
+                  type="password"
+                  name="password"
+                  id="dropdown-password"
+                  size="10"
+                  maxlength="25"
+                />
+              </form>
+            </div>
+
+            <!-- Dropdown-Menu | Container -->
+            <div class="dropdown-content-menu">
+              <ol>
+                <li>
+                  <a href="/News-Page/Nyheter.html">
+                    <h3>Nyheter</h3>
+                    <p>Läs om det senaste i ditt område</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="/contact/contact.html">
+                    <h3>Kontakt</h3>
+                    <p>Kontakta oss vid frågor</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="/smullbox/smullbox.html">
+                    <h3>Till Festen</h3>
+                    <p>Hyr det du inte redan har</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="/membership-page/members.html">
+                    <h3>Medlemmar</h3>
+                    <p>Våra medlemmar & platser</p>
+                  </a>
+                </li>
+                <li>
+                  <a href="/pricelist/priceList.html">
+                    <h3>Prislista</h3>
+                    <p>Skapa en meny</p>
+                  </a>
+                </li>
+              </ol>
+            </div>
+            <!-- Dropdown-Language-BTN | Container -->
+            <div class="dropdown-language">
+              <button class="se">Svenska</button>
+              <span class="separator"></span>
+              <button class="en">English</button>
+            </div>
+
+            <!-- DROPDOWN FOOTER SECTION -->
+            <div class="dropdown-footer">
+              <!-- Container | DD Footer -->
+
+              <div class="header-footer">
+                <!-- Container | Text and information -->
+
+                <section class="text">
+                  <!-- Container | contact information -->
+
+                  <address class="contact">
+                    <p class="titleAddress">Adress</p>
+                    <br />
+                    <p>Resto Culinair</p>
+                    <p>leftline 5</p>
+                    <p>111 11 Stockholm</p>
+                  </address>
+                  <!-- Container for list information -->
+                  <div class="list">
+                    <h3>Genvägar</h3>
+                    <div><a href="/index.html">Startsidan</a></div>
+                    <div><a href="/Nyheter.html">Nyheter</a></div>
+                    <div><a href="/members.html">Medlem</a></div>
+                    <div><a href="/priceList.html">Prislista</a></div>
+                    <div><a href="/smullbox.html">Smullbox</a></div>
+                    <div><a href="/contact.html">Kontakt</a></div>
+                  </div>
+
+                  <!-- Not visible on a small screen, appears when the smallest px is 768-->
+                  <div class="bottomIcons">
+                    <div class="socialMedia">
+                      <h3>Följ oss</h3>
+                      <ul>
+                        <li>
+                          <span class="icons"
+                            ><i class="fa-brands fa-square-facebook"></i
+                          ></span>
+                        </li>
+                        <li>
+                          <span class="icons"
+                            ><i class="fa-brands fa-square-instagram"></i
+                          ></span>
+                        </li>
+                        <li>
+                          <span class="icons"
+                            ><i class="fa-brands fa-square-twitter"></i
+                          ></span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="payMethods">
+                      <h3>Betalmedel</h3>
+                      <ul>
+                        <li>
+                          <span class="icons">K.</span>
+                        </li>
+                        <li>
+                          <span class="icons"
+                            ><i class="fa-brands fa-cc-visa"></i
+                          ></span>
+                        </li>
+                        <li>
+                          <span class="icons"
+                            ><i class="fa-brands fa-cc-mastercard"></i
+                          ></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+
+                <!-- Icon Section -->
+                <!-- Not visible on large screen, appears when max px is 767 -->
+                <div class="icon">
+                  <!-- Conatiner for icon 1 -->
+                  <div class="fb">
+                    <span><i class="fa-brands fa-square-facebook"></i></span>
+                  </div>
+                  <!-- Conatiner for icon 2 -->
+                  <div class="instagram">
+                    <span><i class="fa-brands fa-square-instagram"></i></span>
+                  </div>
+                  <!-- Conatiner for icon 3 -->
+                  <div class="twitter">
+                    <span><i class="fa-brands fa-square-twitter"></i></span>
+                  </div>
+                  <!-- Conatiner for icon 4 -->
+                  <div class="klarna"><span>K.</span></div>
+                  <!-- Conatiner for icon 5 -->
+                  <div class="visa">
+                    <span><i class="fa-brands fa-cc-visa"></i></span>
+                  </div>
+                  <!-- Conatiner for icon 6 -->
+                  <div class="mastercard">
+                    <span><i class="fa-brands fa-cc-mastercard"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Container for phone icon -->
+        <div class="phone-dropdown">
+          <div class="phone-toggle-btn">
+            <button class="phone-toggle-btn-icon">
+              <img
+                class="phone-toggle-btn-icon-1"
+                src="/assets/Phone-Icon.svg"
+                alt="Phone-Button"
+              />
+            </button>
+          </div>
+          <div class="phone-dropdown-content">
+            <span class="phone-text">Call & Order</span>
+            <div class="phone-phone-nr">08 555 69 76</div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- WRAPPER -->
+    <main class="fp-wrapper">
+      <!-- HERO SECTION | FRONT PAGE -->
+      <section class="hero-wrapper">
+        <!-- Hero wrapper -->
+        <div class="hero-background">
+          <div class="hero-background-img">
+            <!-- Hero Background image -->
+            <div class="hero-heading">
+              <!-- Hero heading container -->
+              <h1 class="hero-h1">SUPPLY NETWORK</h1>
+              <!-- Hero h1 -->
+              <h2 class="hero-h2">
+                för catering<br />
+                event & restaurang
+              </h2>
+              <!-- Hero h2 -->
+            </div>
+
+            <div class="search-bar">
+              <!-- Container for the searchbar function -->
+              <div class="search-box">
+                <!-- Container for the text field -->
+                <img
+                  class="search-box-icon"
+                  src="/assets/Vector.png"
+                  alt="Pin button for position"
+                />
+
+                <form role="search" class="search-form">
+                  <input
+                    type="search"
+                    name="type"
+                    class="search-box-input-form"
+                    placeholder="Find your closest business"
+                  />
+                </form>
+                <div class="search-box-input"></div>
+              </div>
+              <div class="search-btn-container">
+                <button class="search-btn">
+                  <img
+                    class="search-btn-icon"
+                    src="/assets/travel_explore.svg"
+                    alt="Search button"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <section class="hero-card">
+              <div class="hero-card-bg">
+                <h2 class="hero-card-h2">
+                  Välkommen till ditt <br />
+                  grossist centrum.<br />
+                  Råvaror av högsta <br />
+                  kvalité nära dig!
+                </h2>
+                <p class="hero-card-text">
+                  Vi sammarbetar med sveriges <br />
+                  bästa leverantörer för att <br />
+                  försäkra våra kunder god kvalité!
+                </p>
+              </div>
+            </section>
+
+            <section class="hero-cta">
+              <div class="hero-cta-heading">
+                <h2 class="hero-cta-h2-1">NYHETER</h2>
+                <h2 class="hero-cta-h2-2">MEDLEMMAR</h2>
+              </div>
+              <div class="hero-cta-img">
+                <a href="/News-Page/Nyheter.html">
+                  <div class="hero-cta-img-1">
+                    <img
+                      src="/img/guacc-min.png"
+                      alt="Guaccamole"
+                      class="hero-cta-img-1-1"
+                    />
+                  </div>
+                </a>
+                <a href="/membership-page/members.html">
+                  <div class="hero-cta-img-2">
+                    <img
+                      src="/img/herrgurka.png"
+                      alt="herrgurka logo"
+                      class="hero-cta-img-2-1"
+                    />
+                    <img
+                      src="/img/varsego.png"
+                      alt="Varsego logo"
+                      class="hero-cta-img-2-2"
+                    />
+                    <img
+                      src="/img/snabbgross.png"
+                      alt="Snabbgrossen"
+                      class="hero-cta-img-2-3"
+                    />
+                  </div>
+                </a>
+              </div>
+              <div class="hero-cta-btns">
+                <a class="hero-cta-btn" href="#fp-grid">
+                  <img
+                    class="hero-cta-btn-1"
+                    src="/assets/keyboard_double_arrow_down.svg"
+                    alt="Arrow down button"
+                  />
+                  <img
+                    src="assets/bright-arrow.svg"
+                    alt="Arrow down button"
+                    class="hero-cta-btn-2"
+                  />
+                </a>
+
+                <a class="hero-cta-btn" href="#fp-grid2">
+                  <img
+                    class="hero-cta-btn-1"
+                    src="/assets/keyboard_double_arrow_down.svg"
+                    alt="Arrow down button"
+                  />
+                  <img
+                    src="assets/bright-arrow.svg"
+                    alt="Arrow down button"
+                    class="hero-cta-btn-2"
+                  />
+                </a>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 1: Front Page Grid -->
+      <section class="fp-grid" id="fp-grid">
+        <!-- Grid Heading - Available to Screen Readers - Hidden Visually -->
+        <h1 class="grid-h1-validate">
+          First gallery grid of Images and Videos
+        </h1>
+        <div class="fp-grid-background">
+          <!-- Video Card 1 -->
+          <div class="fp-grid-wrapper" tabindex="0">
+            <figure class="fp-video-card-1" tabindex="0">
+              <iframe
+                class="fp-grid-media fp-grid-video-1"
+                src="https://www.youtube.com/embed/xdiUu2rcCxw?si=uZr48nt7leTC1rLE"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+          web-share"
+                allowfullscreen
+              ></iframe>
+            </figure>
+            <!-- Image Card 1 -->
+            <figure class="fp-image-card-1" tabindex="0">
+              <img
+                class="fp-grid-media fp-grid-image-1"
+                src="img/grid-truck-pic.jpg"
+                alt="Fish and chips food truck"
+                loading="lazy"
+              />
+            </figure>
+            <!-- Image Card 2 -->
+            <figure class="fp-image-card-2" tabindex="0">
+              <img
+                class="fp-grid-media fp-grid-image-2"
+                src="img/foodimg1.png"
+                alt="Fancy vege platter and herbs on a plate"
+                loading="lazy"
+              />
+            </figure>
+            <!-- Image Card 3 -->
+            <figure class="fp-image-card-3" tabindex="0">
+              <img
+                class="fp-grid-media fp-grid-image-3"
+                src="img/frout_plate.png"
+                alt="Green vegetables and orange fruits and some beriies on a black plate"
+                loading="lazy"
+              />
+            </figure>
+            <!-- Story Card 1 - Video Card 2 -->
+            <figure class="fp-story-card-1" tabindex="0">
+              <video
+                class="fp-grid-media fp-grid-story-1"
+                src="img/grid-video-1.mp4"
+                controls
+                poster="img/whine_and_dine.png"
+              >
+                <!-- Alternative content for users who can't view the video -->
+                Your browser does not support this video.
+              </video>
+            </figure>
+            <!-- Image Card 4 -->
+            <figure class="fp-image-card-4" tabindex="0">
+              <img
+                class="fp-grid-media fp-grid-image-4"
+                src="img/grid-customer-review.jpg"
+                alt="Positive customer review in Trustpilot"
+                loading="lazy"
+              />
+            </figure>
+            <!-- Text Card -->
+            <figure class="fp-text-card" tabindex="0">
+              <span class="fp-grid-media fp-grid-customer-1">customers</span>
+            </figure>
+            <!-- Image Card 5 -->
+            <figure class="fp-image-card-5" tabindex="0">
+              <img
+                class="fp-grid-media fp-grid-image-5"
+                src="img/grid-event-pic.jpg"
+                alt="A tabel of food in an event"
+                loading="lazy"
+              />
+            </figure>
+            <!-- Image Card 6 -->
+            <figure class="fp-image-card-6" tabindex="0">
+              <img
+                class="fp-grid-media fp-grid-image-6"
+                src="img/pasteryandmushrooms.png"
+                alt="Pastery and mushrooms and gravey on an plate"
+                loading="lazy"
+              />
+            </figure>
+            <!-- Image Card 7 -->
+            <figure class="fp-image-card-7" tabindex="0">
+              <img
+                class="fp-grid-media fp-grid-image-7"
+                src="img/meat_on_ice.png"
+                alt="Two uncooked meat steaks on ice , drizzeled with sea salt"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Front Page Grid -->
+      <section class="fp-grid" id="fp-grid2">
+        <!-- Grid Heading - Available to Screen Readers - Hidden Visually -->
+        <h1 class="grid-h1-validate">
+          Second gallery grid of Images and Videos
+        </h1>
+        <div class="fp-grid-background">
+          <div class="fp-grid-wrapper" tabindex="0">
+            <!-- Video Card 1 -->
+            <figure class="fp-video-card-1" tabindex="0">
+              <iframe
+                class="fp-grid-media fp-grid-video-1"
+                src="https://www.youtube.com/embed/wMZFCtG7-5I?si=97medu6Y7FnEfJAP"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
+            web-share"
+                allowfullscreen
+              ></iframe>
+            </figure>
+            <!-- Image Card 1 -->
+            <figure class="fp-image-card-1" tabindex="0">
+              <img
+                class="fp-grid-media fp-grid-image-1"
+                src="img/guacc.png"
+                alt="Guacamole and a bowl"
+                loading="lazy"
+              />
+            </figure>
+            <!-- Image Card 2 -->
+            <figure class="fp-image-card-2" tabindex="0">
+              <img
+                class="fp-grid-media fp-grid-image-2"
+                src="img/foodimg1.png"
+                alt="Fancy vege platter and herbs on a plate"
+                loading="lazy"
+              />
+            </figure>
+            <!-- Image Card 3 -->
+            <figure class="fp-image-card-3" tabindex="0">
+              <img
+                class="fp-grid-media fp-grid-image-3"
+                src="img/frout_plate.png"
+                alt="Green vegetables and orange fruits and some beriies on a black plate"
+                loading="lazy"
+              />
+            </figure>
+            <!-- Story Card 1 - Video Card 2 -->
+            <figure class="fp-story-card-1" tabindex="0">
+              <video
+                class="fp-grid-media fp-grid-story-1"
+                src="img/grid-video-2.mp4"
+                controls
+              >
+                <!-- Alternative content for users who can't view the video -->
+                Your browser does not support this video.
+              </video>
+            </figure>
+            <!-- Image Card 4 -->
+            <figure class="fp-image-card-4" tabindex="0">
+              <img
+                class="fp-grid-media fp-grid-image-4"
+                src="img/grid-customer-review.jpg"
+                alt="Positive customer review in Trustpilot"
+                loading="lazy"
+              />
+            </figure>
+            <!-- Text Card -->
+            <figure class="fp-text-card" tabindex="0">
+              <span class="fp-grid-media fp-grid-customer-1">customers</span>
+            </figure>
+            <!-- Image Card 5 -->
+            <figure class="fp-image-card-5" tabindex="0">
+              <img
+                class="fp-grid-media fp-grid-image-5"
+                src="img/grid-event-pic.jpg"
+                alt="Tabel of food in an event"
+                loading="lazy"
+              />
+            </figure>
+            <!-- Image Card 6-->
+            <figure class="fp-image-card-6" tabindex="0">
+              <img
+                class="fp-grid-media fp-grid-image-6"
+                src="img/stue.png"
+                alt="Meat stew on a bowl"
+                loading="lazy"
+              />
+            </figure>
+            <!-- Image Card 7 -->
+            <figure class="fp-image-card-7" tabindex="0">
+              <img
+                class="fp-grid-media fp-grid-image-7"
+                src="img/l.ladisa87_simple_category_image_for_bistrot_food_background_wh_bb19a5d3-6777-45df-b412-dbfc738774b7.png"
+                alt="Fish, cheese, bread, berries and red wine"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+    <!-- Container for the Footer -->
+    <footer>
+      <!-- Text and information Section -->
+      <section class="textFooter">
+        <!-- Container for contact information -->
+        <address class="contactF">
+          <p class="footerP">Adress</p>
+          <br />
+          <p class="footerP">Resto Culinair</p>
+          <p class="footerP">leftline 5</p>
+          <p class="footerP">111 11 Stockholm</p>
+        </address>
+        <!-- Container for list information -->
+        <div class="listFooter">
+          <h3 class="footerH3">Genvägar</h3>
+          <div><a class="footerA" href="/index.html">Startsidan</a></div>
+          <div>
+            <a class="footerA" href="/News-Page/Nyheter.html">Nyheter</a>
+          </div>
+          <div>
+            <a class="footerA" href="/membership-page/members.html">Medlem</a>
+          </div>
+          <div>
+            <a class="footerA" href="/pricelist/priceList.html">Prislista</a>
+          </div>
+          <div>
+            <a class="footerA" href="/smullbox/smullbox.html">Smullbox</a>
+          </div>
+          <div><a class="footerA" href="/contact/contact.html">Kontakt</a></div>
+        </div>
+
+        <!-- Not visible on a small screen, appears when the smallest px is 768-->
+        <div class="bottomIcons">
+          <div class="socialMedia">
+            <h3 class="footerH3">Följ oss</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://www.facebook.com/StarWars.Nordics/?brand_redir=169299103121699"
+                  ><span class="icons"
+                    ><i class="fa-brands fa-square-facebook"></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/starwars/"
+                  ><span class="icons"
+                    ><i class="fa-brands fa-square-instagram"></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/starwars">
+                  <span class="icons"
+                    ><i class="fa-brands fa-square-twitter"></i></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="payMethods">
+            <h3 class="footerH3">Betalmedel</h3>
+            <ul>
+              <li>
+                <a href="https://www.paypal.com">
+                  <span class="icons"
+                    ><i class="fa-brands fa-cc-paypal"></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.visa.se/"
+                  ><span class="icons"
+                    ><i class="fa-brands fa-cc-visa"></i></span
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.mastercard.se/sv-se.html"
+                  ><span class="icons"
+                    ><i class="fa-brands fa-cc-mastercard"></i></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Icon Section -->
+      <!-- Not visible on large screen, appears when max px is 767 -->
+      <div class="iconFooter">
+        <!-- Conatiner for icon 1 -->
+        <a
+          href="https://www.facebook.com/StarWars.Nordics/?brand_redir=169299103121699"
+          ><div class="fb">
+            <span><i class="fa-brands fa-square-facebook"></i></span></div
+        ></a>
+        <!-- Conatiner for icon 2 -->
+        <a href="https://www.instagram.com/starwars/"
+          ><div class="instagram">
+            <span><i class="fa-brands fa-square-instagram"></i></span></div
+        ></a>
+        <!-- Conatiner for icon 3 -->
+        <a href="https://twitter.com/starwars"
+          ><div class="twitter">
+            <span><i class="fa-brands fa-square-twitter"></i></span></div
+        ></a>
+        <!-- Conatiner for icon 4 -->
+        <a href="https://www.paypal.com"
+          ><div class="klarna">
+            <span><i class="fa-brands fa-cc-paypal"></i></span></div
+        ></a>
+        <!-- Conatiner for icon 5 -->
+        <a href="https://www.visa.se/"
+          ><div class="visa">
+            <span><i class="fa-brands fa-cc-visa"></i></span></div
+        ></a>
+        <!-- Conatiner for icon 6 -->
+        <a href="https://www.mastercard.se/sv-se.html"
+          ><div class="mastercard">
+            <span><i class="fa-brands fa-cc-mastercard"></i></span></div
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>

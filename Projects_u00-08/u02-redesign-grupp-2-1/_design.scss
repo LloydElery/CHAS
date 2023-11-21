@@ -1,0 +1,24 @@
+$colorBrown: #763a03;
+$colorLB: #c9f0ff;
+$colorDB: #4d7ea8;
+$colorSand: #ccad8f;
+$colorBlack: #0000;
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: $colorBrown;
+}
+h2 {
+  color: $colorDB;
+  font-size: 20px;
+  font-weight: bold;
+}
+h3 {
+    font-size: 15px;
+    color: $colorBlack;
+}
+p {
+    font-size: 10px;
+    color: $colorBlack;
+}

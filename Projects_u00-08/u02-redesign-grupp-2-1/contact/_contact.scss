@@ -1,0 +1,121 @@
+$colorBrown: #763a03;
+$colorLB: #c9f0ff;
+$colorDB: #4d7ea8;
+$colorSand: #ccad8f;
+$colorBlack: #000;
+$colorText: whitesmoke;
+
+.contactBody {
+  // width: 100%;
+  background-image: url("/contact/img/background.png");
+  background-color: $colorLB; // dont use background image background color at the the same time in the body styling
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  // min-height: 100vh;
+  // display: flex;
+  // flex-direction: column; ###remove unused styling or comments that have no use
+
+  .main-wrapper {
+    // height: 728px;
+    flex: 1 0 auto;
+    .contact-us {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      height: 700px;
+      top: 100px;
+
+      // position: relative;
+
+      .contact-text {
+        margin-top: 7px;
+        margin-bottom: 39px;
+        margin-left: 8px;
+        margin-right: 8px;
+
+        .contactH1 {
+          text-shadow: 2px 2px grey;
+          text-transform: uppercase;
+          margin: 10px 20px 10px 10px;
+        }
+      }
+
+      .containerContact {
+        // position: relative;
+        max-width: 300px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-color: $colorSand;
+
+        // z-index: 0;
+
+        .contact-wrapper {
+          //padding: 20px 40px;
+          //margin: 3px;
+          // width: 100%;
+          // float: right;
+          width: 248px;
+          margin: 10px;
+          // padding: 20px;
+          padding-left: 5px;
+          padding-top: 10px;
+
+          // Change color on text in input
+          ::placeholder {
+            color: rgba(0, 0, 0, 0.40);
+            text-align: left;
+          }
+
+          .field {
+            width: 100%;
+            padding: 3px 5px;
+            margin: 3px;
+            background: $colorText;
+            border: 1px solid $colorBlack;
+            text-align: left;
+          }
+
+          .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            gap: 15px;
+            width: 265px;
+
+            .fieldSpan {
+              flex-basis: 50%;
+              padding-top: 5px;
+              // margin-left: 20px;
+              align-items: center;
+              text-align: center;
+            }
+          }
+
+          .sendButtonContact {
+            width: 70px;
+            margin-bottom: 10px;
+            // padding: 0 10px;
+            padding: 2px;
+            margin-left: 190px;
+            border: 1px solid $colorBlack;
+            border-radius: 5px;
+            background-color: #4d7ea8;
+            color: white;
+          }
+
+          select {
+            width: 50%;
+            margin-left: 25%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid $colorBlack;
+          }
+        }
+      }
+    }
+  }
+}
