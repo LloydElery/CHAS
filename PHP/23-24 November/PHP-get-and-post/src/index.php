@@ -15,5 +15,12 @@
         <button type="submit">Submit</button>
     </form>
 
+    // action="get_handler.php" - Länkar till get_handler.php filen
+    // method="get" - Vilken metod vi använder
+    // for="name"
+    // type="text"
+    // name="name"
+    // type="submit" - Kör 'action=" "' vid submit event. 
+
 </body>
 </html>
