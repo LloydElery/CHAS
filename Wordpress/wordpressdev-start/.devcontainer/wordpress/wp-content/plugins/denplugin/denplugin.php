@@ -1,7 +1,0 @@
-<?php
-
-/*
-Plugin name: DenPlugin
-*/
-
-?>
